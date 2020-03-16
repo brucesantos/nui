@@ -1,0 +1,26 @@
+// NUI Variables - Ou seja, nossas cores estilos aqui
+@import "./custom-variables.scss";
+
+// Bootstrap and its default variables
+@import "../dependencies/bootstrap-4.4.1/scss/bootstrap.scss";
+
+@import "./daterangepicker.scss";
+
+// NUI Componentes
+@import "./resets.scss";
+@import "./general.scss";
+@import "./menu-lateral.scss";
+@import "./timeline.scss";
+
+#filtro {
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      color: $primary;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+}

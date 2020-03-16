@@ -1,0 +1,98 @@
+.timeline {
+  .passo {
+    display: flex;
+    .visual {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 1em;
+      .bola {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0,0,0,.3);
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        i {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+      .linha {
+        height: 100px;
+        width: 2px;
+        background-color: rgba(0,0,0,.3);
+      }
+    }
+    .info {
+      opacity: .3;
+      .titulo-do-passo {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: .2em;
+      }
+      .descritivo-placeholder {
+        div {
+          height: 20px;
+          background-color: rgba(0,0,0,.2);
+          margin-bottom: 6px;
+          &:nth-child(1) {
+            width: 140px;
+          }
+          &:nth-child(2) {
+            width: 80px;
+          }
+          &:nth-child(3) {
+            width: 100px;
+          }
+        }
+      }
+      .descritivo {
+        display: none;
+        // quando houverem informações, remover atributo.
+        p {
+          margin: 0;
+          font-size: .86em;
+        }
+      }
+    }
+    &:last-child {
+      .visual {
+        .linha {
+          display: none;
+        }
+      }
+    } //serve pra esconder a linha de conexão do ultimo passo
+    &.ativo {
+      .visual {
+        .bola {
+          background-color: $primary;
+        }
+      }
+      .info {
+        opacity: 1;
+      }
+    }
+    &.passado {
+      .visual {
+        .bola {
+          background-color: $success;
+        }
+        .linha {
+          background-color: $success;
+        }
+      }
+      .info {
+        opacity: .5;
+        .descritivo-placeholder {
+          display: none;
+        }
+        .descritivo {
+          display: initial;
+        }
+      }
+    }
+  } //fim do .passo
+} // fim da .timeline

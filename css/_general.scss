@@ -1,0 +1,20 @@
+body {
+  background-color: desaturate(lighten($primary, 46), 40);
+}
+
+h1, h2, h3, h4, h5, h6, .label-destacado {
+  color: darken($primary, 20);
+  font-weight: bold;
+}
+.label-destacado {
+  margin-bottom: 5px;
+}
+
+.conteudo-da-pagina {
+  margin-left: 260px;
+}
+
+.header-de-pagina {
+  background-color: desaturate(lighten($primary, 42), 37);
+  padding: 20px;
+}

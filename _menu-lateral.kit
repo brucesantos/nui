@@ -1,0 +1,38 @@
+<nav id="menu-lateral">
+  <div class="logo">
+    <img src="img/logo.svg" alt="logomarca">
+  </div>
+  <div class="lista">
+    <a href="#submenu1" class="lista__item com-submenu" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" aria-controls="submenu1">
+      <i class="far fa-thumbs-up"></i>
+      <span>Liberação</span>
+    </a>
+    <div id="submenu1" class="submenu collapse">
+      <a href="#" class="lista__item subitem">
+        <span>Sub Item</span>
+      </a>
+      <a href="#" class="lista__item subitem">
+        <span>Outro Sub Item</span>
+      </a>
+      <a href="#" class="lista__item subitem">
+        <span>Último Sub Item</span>
+      </a>
+    </div>
+    <a href="#" class="lista__item">
+      <i class="far fa-square"></i>
+      <span>Outro Item</span>
+    </a>
+    <a href="#" class="lista__item">
+      <i class="far fa-triangle"></i>
+      <span>Último Item</span>
+    </a>
+  </div>
+</nav>
+<script type="text/javascript">
+  $('.submenu').on('shown.bs.collapse', function() {
+    $('.com-submenu').addClass('aberto');
+  })
+  $('.submenu').on('hidden.bs.collapse', function() {
+    $('.com-submenu').removeClass('aberto');
+  })
+</script>

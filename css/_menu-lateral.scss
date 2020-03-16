@@ -1,0 +1,72 @@
+#menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background-color: darken(saturate($primary, 100), 23);
+  .logo {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 50px;
+    }
+  }
+  .lista {
+    width: 100%;
+    .lista__item {
+      display: block;
+      cursor: pointer;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 1em;
+      color: lighten($primary, 40);
+      width: 100%;
+      transition: all .2s ease-out;
+      border-top: 1px solid transparentize(lighten($primary, 20), .7);
+      i {
+        margin-right: .3em;
+        width: 20px;
+        text-align: center;
+      }
+      &:hover {
+        color: lighten($primary, 50);
+        background-color: darken(saturate($primary, 100), 18);
+        text-decoration: none;
+      }
+      &.com-submenu {
+        &::after {
+          content: "\f0d7";
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 900;
+          font-size: .75em;
+          color: lighten($primary, 40);
+          width: .75em;
+          text-align: center;
+          margin-left: .3em;
+        }
+        &.aberto {
+          &::after {
+            content: "\f0da";
+          }
+        }
+      }
+      &.subitem {
+        background-color: darken(saturate($primary, 100), 30);
+        line-height: 40px;
+        height: 40px;
+        padding-left: 2em;
+        color: lighten($primary, 20);
+        border-top: 1px solid transparentize(lighten($primary, 20), .8);
+        &:hover {
+          color: lighten($primary, 50);
+          background-color: darken(saturate($primary, 100), 26);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

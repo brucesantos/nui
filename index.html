@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>nui</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="dependencies/fontawesome-pro-5.12.1-web/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="dependencies/bootstrap-4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dependencies/daterangepicker-3.14.1/moment.min.js"></script>
+    <script src="dependencies/daterangepicker-3.14.1/daterangepicker.min.js"></script>
+  </head>
+  
+  <body>
+    <nav id="menu-lateral">
+      <div class="logo">
+        <img src="img/logo.svg" alt="logomarca">
+      </div>
+      <div class="lista">
+        <a href="#submenu1" class="lista__item com-submenu" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" aria-controls="submenu1">
+          <i class="far fa-thumbs-up"></i>
+          <span>Liberação</span>
+        </a>
+        <div id="submenu1" class="submenu collapse">
+          <a href="#" class="lista__item subitem">
+            <span>Sub Item</span>
+          </a>
+          <a href="#" class="lista__item subitem">
+            <span>Outro Sub Item</span>
+          </a>
+          <a href="#" class="lista__item subitem">
+            <span>Último Sub Item</span>
+          </a>
+        </div>
+        <a href="#" class="lista__item">
+          <i class="far fa-square"></i>
+          <span>Outro Item</span>
+        </a>
+        <a href="#" class="lista__item">
+          <i class="far fa-triangle"></i>
+          <span>Último Item</span>
+        </a>
+      </div>
+    </nav>
+    <script type="text/javascript">
+      $('.submenu').on('shown.bs.collapse', function() {
+        $('.com-submenu').addClass('aberto');
+      })
+      $('.submenu').on('hidden.bs.collapse', function() {
+        $('.com-submenu').removeClass('aberto');
+      })
+    </script>
+    
+    <section class="conteudo-da-pagina">
+      <div class="header-de-pagina">
+        <h1>Header de Página</h1>
+      </div>
+      <div class="container-fluid">
+        <div class="card" style="margin:1em 0;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="timeline">
+                  <div class="passo passado" id="passo01">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-building"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo ativo" id="passo02">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="fal fa-money-check-alt"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo inativo" id="passo03">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-paperclip"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                </div>
+                
+              </div>
+              <div class="col-md-6">
+                <form>
+                  <div class="form-group">
+                    <label class="label-destacado" for="formGroupExampleInput">Example label</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                  </div>
+                  <div class="form-group">
+                    <label class="label-destacado" for="formGroupExampleInput2">Another label</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                  </div>
+                  <hr>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                  </div>
+                  <hr>
+                  <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                  </div>
+                  <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+                    <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                  </div>
+                  <hr>
+                  <div class="form-group">
+                    <label class="label-destacado" for="custom-select">Another label</label>
+                    <select class="custom-select">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="filtro" class="card" style="margin:1em 0;">
+          <div class="card-header">
+            <h4>Filtros</h4>
+            <i class="far fa-minus-circle" data-toggle="collapse" data-target="#form-filtros" aria-expanded="true" aria-controls="form-filtros"></i>
+          </div>
+          <div id="form-filtros" class="collapse show" aria-labelledby="headingOne" data-parent="#filtro">
+            <div class="card-body">
+              <form class="" action="" method="">
+                <div class="row">
+                  <div class="form-group col-md-3">
+                    <label class="label-destacado" for="formGroupExampleInput">Usuário</label>
+                    <input type="text" class="form-control" id="nomeUser" placeholder="nome do usuário">
+                  </div>
+                  <div class="form-group col-md-5">
+                    <label class="label-destacado" for="periodo">Período</label>
+                    <input id="input-periodo" type="text" name="periodo" class="form-control" value="01/01/2018 - 01/15/2018">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="label-destacado" for="custom-select">Coligada</label>
+                    <select class="custom-select">
+                      <option selected>Alupita</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label class="label-destacado" for="custom-select">Tipo</label>
+                    <select class="custom-select">
+                      <option selected>Tipo um</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-5">
+                    <label class="label-destacado" for="custom-select">Ordenar por</label>
+                    <select class="custom-select">
+                      <option selected>Tipo um</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-end">
+                  <a class="btn btn-light" href="#" role="button">Limpar Filtros</a>
+                  <a class="btn btn-primary" href="#" role="button" style="margin-left:1em;">Filtrar</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <script type="text/javascript">
+          // troca o icone do botão de toggle para abrir e fechar
+          $('#form-filtros').on('shown.bs.collapse', function() {
+            console.log('teste aberto');
+            $('.card-header i').addClass('fa-minus-circle');
+            $('.card-header i').removeClass('fa-plus-circle');
+          })
+          $('#form-filtros').on('hidden.bs.collapse', function() {
+            console.log('teste fechado');
+            $('.card-header i').removeClass('fa-minus-circle');
+            $('.card-header i').addClass('fa-plus-circle');
+          })
+          // inicia o calendario para selecao de periodo
+          $('#input-periodo').daterangepicker({
+              "maxYear": 5,
+              "autoApply": true,
+              ranges: {
+                  'Hoje': [moment(), moment()],
+                  'Ontem': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                  'Últimos 7 Dias': [moment().subtract(6, 'days'), moment()],
+                  'Últimos 30 Dias': [moment().subtract(29, 'days'), moment()],
+                  'Este Mês': [moment().startOf('month'), moment().endOf('month')],
+                  'Último Mês': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+              },
+              "locale": {
+                  "format": "DD/MM/YYYY",
+                  "separator": " - ",
+                  "applyLabel": "Aplicar",
+                  "cancelLabel": "Cancelar",
+                  "fromLabel": "De",
+                  "toLabel": "Até",
+                  "customRangeLabel": "Manual",
+                  "weekLabel": "S",
+                  "daysOfWeek": [
+                      "Do",
+                      "Se",
+                      "Te",
+                      "Qu",
+                      "Qu",
+                      "Se",
+                      "Sa"
+                  ],
+                  "monthNames": [
+                      "Janeiro",
+                      "Fevereiro",
+                      "Março",
+                      "Abril",
+                      "Maio",
+                      "Junho",
+                      "Julho",
+                      "Agosto",
+                      "Setembro",
+                      "Outubro",
+                      "Novembro",
+                      "Dezembro"
+                  ],
+                  "firstDay": 1
+              },
+              "parentEl": "form-filtros",
+              "startDate": "01/02/2020",
+              "endDate": "01/03/2020",
+              "minDate": "01/01/2010",
+              "maxDate": "01/01/2030"
+          }, function(start, end, label) {
+            console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+          });
+        </script>
+        
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<div id="filtro" class="card" style="margin:1em 0;">
+  <div class="card-header">
+    <h4>Filtros</h4>
+    <i class="far fa-minus-circle" data-toggle="collapse" data-target="#form-filtros" aria-expanded="true" aria-controls="form-filtros"></i>
+  </div>
+  <div id="form-filtros" class="collapse show" aria-labelledby="headingOne" data-parent="#filtro">
+    <div class="card-body">
+      <form class="" action="" method="">
+        <div class="row">
+          <div class="form-group col-md-3">
+            <label class="label-destacado" for="formGroupExampleInput">Usuário</label>
+            <input type="text" class="form-control" id="nomeUser" placeholder="nome do usuário">
+          </div>
+          <div class="form-group col-md-5">
+            <label class="label-destacado" for="periodo">Período</label>
+            <input id="input-periodo" type="text" name="periodo" class="form-control" value="01/01/2018 - 01/15/2018">
+          </div>
+          <div class="form-group col-md-4">
+            <label class="label-destacado" for="custom-select">Coligada</label>
+            <select class="custom-select">
+              <option selected>Alupita</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label class="label-destacado" for="custom-select">Tipo</label>
+            <select class="custom-select">
+              <option selected>Tipo um</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="form-group col-md-5">
+            <label class="label-destacado" for="custom-select">Ordenar por</label>
+            <select class="custom-select">
+              <option selected>Tipo um</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-end">
+          <a class="btn btn-light" href="#" role="button">Limpar Filtros</a>
+          <a class="btn btn-primary" href="#" role="button" style="margin-left:1em;">Filtrar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  // troca o icone do botão de toggle para abrir e fechar
+  $('#form-filtros').on('shown.bs.collapse', function() {
+    console.log('teste aberto');
+    $('.card-header i').addClass('fa-minus-circle');
+    $('.card-header i').removeClass('fa-plus-circle');
+  })
+  $('#form-filtros').on('hidden.bs.collapse', function() {
+    console.log('teste fechado');
+    $('.card-header i').removeClass('fa-minus-circle');
+    $('.card-header i').addClass('fa-plus-circle');
+  })
+  // inicia o calendario para selecao de periodo
+  $('#input-periodo').daterangepicker({
+      "maxYear": 5,
+      "autoApply": true,
+      ranges: {
+          'Hoje': [moment(), moment()],
+          'Ontem': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Últimos 7 Dias': [moment().subtract(6, 'days'), moment()],
+          'Últimos 30 Dias': [moment().subtract(29, 'days'), moment()],
+          'Este Mês': [moment().startOf('month'), moment().endOf('month')],
+          'Último Mês': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      },
+      "locale": {
+          "format": "DD/MM/YYYY",
+          "separator": " - ",
+          "applyLabel": "Aplicar",
+          "cancelLabel": "Cancelar",
+          "fromLabel": "De",
+          "toLabel": "Até",
+          "customRangeLabel": "Manual",
+          "weekLabel": "S",
+          "daysOfWeek": [
+              "Do",
+              "Se",
+              "Te",
+              "Qu",
+              "Qu",
+              "Se",
+              "Sa"
+          ],
+          "monthNames": [
+              "Janeiro",
+              "Fevereiro",
+              "Março",
+              "Abril",
+              "Maio",
+              "Junho",
+              "Julho",
+              "Agosto",
+              "Setembro",
+              "Outubro",
+              "Novembro",
+              "Dezembro"
+          ],
+          "firstDay": 1
+      },
+      "parentEl": "form-filtros",
+      "startDate": "01/02/2020",
+      "endDate": "01/03/2020",
+      "minDate": "01/01/2010",
+      "maxDate": "01/01/2030"
+  }, function(start, end, label) {
+    console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+  });
+</script>
