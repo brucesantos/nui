@@ -3,24 +3,15 @@
 
 // Bootstrap and its default variables
 @import "../dependencies/bootstrap-4.4.1/scss/bootstrap.scss";
-
+// Date range picker
 @import "./daterangepicker.scss";
 
 // NUI Componentes
 @import "./resets.scss";
+@import "./shadows.scss";
 @import "./general.scss";
 @import "./menu-lateral.scss";
 @import "./timeline.scss";
-
-#filtro {
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    i {
-      color: $primary;
-      cursor: pointer;
-      font-size: 20px;
-    }
-  }
-}
+@import "./filtro.scss";
+@import "./header.scss";
+@import "./card-de-lista.scss";

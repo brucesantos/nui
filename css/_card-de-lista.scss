@@ -1,0 +1,84 @@
+.card-de-lista {
+  &.selecionado {
+    background-color: saturate(lighten($primary, 47), 100);
+    @include sombra-5;
+    z-index: 2;
+    &:hover {
+      @include sombra-5;
+    }
+  }
+  cursor: pointer;
+  margin-bottom: 10px;
+  &:hover {
+    @include sombra-3;
+    z-index: 2;
+  }
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .miolo {
+      margin: 0 1em;
+      font-size: .85em;
+      label {
+        margin: 0;
+        font-weight: bold;
+        color: darken($primary, 20);
+      }
+      p {
+        color: rgba(0,0,0,.7);
+      }
+    }
+    .area-interativa {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      min-height: 40px;
+      margin: 1em 0;
+      color: $primary;
+      border-radius: 100px;
+      background-color: saturate(lighten($primary, 42), 100);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .checkbox-fix {
+        &::before {
+          cursor: pointer;
+          top: -0.50rem;
+          left: -1.25rem;
+          border: $primary solid 2px;
+        }
+        &::after {
+          cursor: pointer;
+          top: -0.50rem;
+          left: -1.25rem;
+        }
+      }
+    }
+    .informativos {
+      margin: 0 1em;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 24px;
+      color: rgba(0,0,0,.2);
+      i {
+        margin: .3em 0;
+        text-align: center;
+      }
+    }
+    .acoes {
+      .anexos {
+        position: relative;
+        .badge {
+          position: absolute;
+          top: -5px;
+          right: 25px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

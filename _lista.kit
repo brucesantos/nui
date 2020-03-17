@@ -1,0 +1,20 @@
+<div class="lista">
+  <!-- $cardID=card01 -->
+  <!-- @import="lista-card" -->
+
+  <!-- $cardID=card02 -->
+  <!-- @import="lista-card" -->
+
+  <!-- $cardID=card03 -->
+  <!-- @import="lista-card" -->
+</div>
+
+<script type="text/javascript">
+  $('#card01select').click(function() {
+    if ($(this).prop('checked')) {
+      $('#card01').addClass('selecionado');
+    } else {
+      $('#card01').removeClass('selecionado');
+    }
+  });
+</script>

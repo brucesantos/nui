@@ -1,3 +1,7 @@
+@mixin transicao-1 {
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
 body {
   background-color: desaturate(lighten($primary, 46), 40);
 }
@@ -17,4 +21,15 @@ h1, h2, h3, h4, h5, h6, .label-destacado {
 .header-de-pagina {
   background-color: desaturate(lighten($primary, 42), 37);
   padding: 20px;
+  margin-bottom: 1em;
+}
+
+.card {
+  border: none;
+  @include transicao-1;
+  @include sombra-1;
+  .card-header {
+    border: none;
+    background-color: desaturate(lighten($primary, 50), 50);
+  }
 }

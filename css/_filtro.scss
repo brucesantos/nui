@@ -1,0 +1,12 @@
+#filtro {
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      color: $primary;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+}

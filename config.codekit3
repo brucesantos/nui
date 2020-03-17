@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
 	"/_filtro.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -31,6 +39,30 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_head.html",
+		"oF": 0
+		},
+	"/_header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_header.html",
+		"oF": 0
+		},
+	"/_lista-card.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card.html",
+		"oF": 0
+		},
+	"/_lista.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista.html",
 		"oF": 0
 		},
 	"/_menu-lateral.kit": {
@@ -56,6 +88,19 @@
 		"oA": 1,
 		"oAP": "/_timeline.html",
 		"oF": 0
+		},
+	"/css/_card-de-lista.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_card-de-lista.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/css/_custom-variables.css": {
 		"aP": 1,
@@ -93,6 +138,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/css/_filtro.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_filtro.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/css/_general.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -102,6 +160,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/_general.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/css/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -128,6 +199,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/_resets.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/css/_shadows.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_shadows.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

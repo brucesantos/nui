@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: .7em 1em;
+  .direita {
+    display: flex;
+    div {
+      margin-left: 10px;
+    }
+  }
+  .notificacoes {
+    position: relative;
+    .badge {
+      position: absolute;
+      top: -3px;
+      right: 25px;
+      text-align: right;
+      font-size: .73em;
+    }
+  }
+}
