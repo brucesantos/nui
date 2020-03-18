@@ -216,6 +216,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/css/_tail-select.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_tail-select.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/css/_timeline.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -6272,6 +6285,742 @@
 		"oA": 0,
 		"oAP": "/dependencies/fontawesome-pro-5.12.1-web/webfonts/fa-solid-900.woff2",
 		"oF": 0
+		},
+	"/dependencies/tail.select-0.5.15/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/.gitattributes",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/bower.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"/dependencies/tail.select-0.5.15/CHANGELOG.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/CHANGELOG.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-danger.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-danger.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-danger.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-danger.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-danger.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-danger.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-danger.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-danger.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-funky.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-funky.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-funky.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-funky.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-funky.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-funky.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-funky.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-funky.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-indigo.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-indigo.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-indigo.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-indigo.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-indigo.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-indigo.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-indigo.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-indigo.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-info.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-info.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-info.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-info.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-info.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-info.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-info.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-info.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-invert.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-invert.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-invert.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-invert.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-invert.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-invert.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-invert.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-invert.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-mystery.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-mystery.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-mystery.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-mystery.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-mystery.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-mystery.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-mystery.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-mystery.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-orange.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-orange.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-orange.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-orange.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-orange.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-orange.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-orange.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-orange.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-primary.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-primary.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-primary.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-primary.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-primary.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-primary.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-primary.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-primary.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-secondary.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-secondary.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-secondary.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-secondary.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-secondary.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-secondary.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-secondary.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-secondary.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-success.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-success.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-success.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-success.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-success.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-success.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-success.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-success.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-teal.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-teal.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-teal.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-teal.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-teal.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-teal.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-teal.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-teal.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-warning.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-warning.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-warning.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-warning.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-warning.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-warning.min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-warning.min.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-warning.min.map",
+		"oF": 1
+		},
+	"/dependencies/tail.select-0.5.15/js/tail.select-es6.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/js/tail.select-es6.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/js/tail.select-es6.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/js/tail.select-es6.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/js/tail.select-full.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/js/tail.select-full.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/js/tail.select-full.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/js/tail.select-full.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/js/tail.select.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/js/tail.select.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/js/tail.select.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/js/tail.select.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-all.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-all.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-all.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-all.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-de.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-de.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-es.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-es.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-fi.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-fi.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-fr.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-fr.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-it.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-it.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-no.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-no.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-pt_BR.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-pt_BR.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-ru.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-ru.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/langs/tail.select-tr.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/langs/tail.select-tr.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/tail.select-0.5.15/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/LICENSE.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/dependencies/tail.select-0.5.15/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/package.json",
+		"oF": 1,
+		"oO": 0,
+		"oS": 1
+		},
+	"/dependencies/tail.select-0.5.15/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dependencies/tail.select-0.5.15/README.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"/img/logo.svg": {
 		"ft": 2097152,

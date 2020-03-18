@@ -33,10 +33,97 @@
   <div class="form-group">
     <label class="label-destacado" for="custom-select">Another label</label>
     <select class="custom-select">
-      <option selected>Open this select menu</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
+      <optgroup label="Atari">
+        <option>Atari Lynx</option>
+        <option>Atari Jaguar</option>
+        <option>Atari Jaguar CD Pro</option>
+      </optgroup>
+      <optgroup label="NEC">
+        <option>TurboGrafx-16</option>
+        <option>SuperGrafx</option>
+        <option>TurboExpress</option>
+        <option>TurboDuo</option>
+        <option>PC-FX</option>
+      </optgroup>
+      <optgroup label="Nintendo">
+        <option>Super Nintendo</option>
+        <option>Super Game Boy</option>
+        <option>Satellaview</option>
+        <option>Virtual Boy</option>
+        <option>Nintendo 64</option>
+        <option>Game Boy Color</option>
+        <option>Nintendo 64DD</option>
+      </optgroup>
+      <optgroup label="Sega">
+        <option>Mega Drive/Genesis</option>
+        <option>Sega CD</option>
+        <option>Sega 32X</option>
+        <option>Sega Saturn</option>
+      </optgroup>
+      <optgroup label="SNK">
+        <option>Neo-Geo</option>
+        <option>Neo-Geo CD</option>
+        <option>Neo Geo Pocket</option>
+      </optgroup>
+      <optgroup label="Sony">
+        <option>PlayStation</option>
+        <option>PocketStation</option>
+      </optgroup>
     </select>
   </div>
 </form>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(){
+    tail.select("select", {
+      animate: true,              // [0.3.0]      Boolean
+      classNames: null,           // [0.2.0]      Boolean, String, Array, null
+      csvOutput: false,           // [0.3.4]      Boolean
+      csvSeparator: ",",          // [0.3.4]      String
+      descriptions: false,        // [0.3.0]      Boolean
+      deselect: false,            // [0.3.0]      Boolean
+      disabled: false,            // [0.5.0]      Boolean
+      height: 350,                // [0.2.0]      Integer, null
+      hideDisabled: false,        // [0.3.0]      Boolean
+      hideSelected: false,        // [0.3.0]      Boolean
+      items: {},                  // [0.3.0]      Object
+      locale: "pt_BR",            // [0.5.0]      String
+      linguisticRules: {          // [0.5.9]      Object
+        "е": "ё",
+        "a": "ä",
+        "o": "ö",
+        "u": "ü",
+        "ss": "ß"
+      },
+      multiple: true,             // [0.2.0]      Boolean
+      multiLimit: Infinity,       // [0.3.0]      Integer, Infinity
+      multiPinSelected: true,     // [0.5.0]      Boolean
+      multiContainer: false,      // [0.3.0]      Boolean, String
+      multiShowCount: true,       // [0.3.0]      Boolean
+      multiShowLimit: false,      // [0.5.0]      Boolean
+      multiSelectAll: true,       // [0.4.0]      Boolean
+      multiSelectGroup: true,     // [0.4.0]      Boolean
+      openAbove: null,            // [0.3.0]      Boolean, null
+      placeholder: "opções selecionadas",          // [0.2.0]      String, null
+      search: true,               // [0.3.0]      Boolean
+      searchConfig: [             // [0.5.13]     Array
+        "text", "value"
+      ],
+      searchDisabled: false,      // [0.5.5]      Boolean
+      searchFocus: true,          // [0.3.0]      Boolean
+      searchMarked: true,         // [0.3.0]      Boolean
+      searchMinLength: 2,         // [0.5.13]     Integer
+      sortItems: false,           // [0.3.0]      String, Function, false
+      sortGroups: false,          // [0.3.0]      String, Function, false
+      sourceBind: false,          // [0.5.0]      Boolean
+      sourceHide: true,           // [0.5.0]      Boolean
+      startOpen: false,           // [0.3.0]      Boolean
+      stayOpen: false,            // [0.3.0]      Boolean
+      width: "auto",                // [0.2.0]      Integer, String, null
+      cbComplete: undefined,      // [0.5.0]      Function
+      cbEmpty: undefined,         // [0.5.0]      Function
+      cbLoopItem: undefined,      // [0.4.0]      Function
+      cbLoopGroup: undefined      // [0.4.0]      Function
+    });
+  });
+</script>

@@ -8196,10 +8196,10 @@ header {
   margin-bottom: 10px; }
   .card-de-lista.selecionado {
     background-color: #e3f8ff;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     z-index: 2; }
     .card-de-lista.selecionado:hover {
-      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   .card-de-lista:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     z-index: 2; }
@@ -8265,3 +8265,9 @@ header {
         top: -5px;
         right: 25px;
         text-align: right; }
+
+.tail-select .select-dropdown ul li.optgroup-title {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.tail-select .select-dropdown ul li.dropdown-option.selected {
+  background-color: #f3fbfe; }

@@ -1,0 +1,6 @@
+.tail-select .select-dropdown ul li.optgroup-title {
+  background-color: rgba(0,0,0,.05);
+}
+.tail-select .select-dropdown ul li.dropdown-option.selected {
+  background-color: lighten($primary, 50);
+}

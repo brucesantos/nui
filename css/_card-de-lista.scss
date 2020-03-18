@@ -1,10 +1,10 @@
 .card-de-lista {
   &.selecionado {
     background-color: saturate(lighten($primary, 47), 100);
-    @include sombra-5;
+    @include sombra-2;
     z-index: 2;
     &:hover {
-      @include sombra-5;
+      @include sombra-2;
     }
   }
   cursor: pointer;
