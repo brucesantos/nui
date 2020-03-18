@@ -1,3 +1,4 @@
+// animação de transição padrão
 @mixin transicao-1 {
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
@@ -6,6 +7,7 @@ body {
   background-color: desaturate(lighten($primary, 46), 40);
 }
 
+// customizando os titulos e labels do bootstrap
 h1, h2, h3, h4, h5, h6, .label-destacado {
   color: darken($primary, 20);
   font-weight: bold;
@@ -14,16 +16,25 @@ h1, h2, h3, h4, h5, h6, .label-destacado {
   margin-bottom: 5px;
 }
 
+// todo conteúdo que não inclui o menu lateral
 .conteudo-da-pagina {
   margin-left: 260px;
+  padding-bottom: 4em; //serve pro footer não ficar na frente
 }
 
+// titulo da pagina
 .header-de-pagina {
   background-color: desaturate(lighten($primary, 42), 37);
   padding: 20px;
   margin-bottom: 1em;
+  margin-top: 3.7em;
 }
 
+.btn.disabled {
+  opacity: .3;
+}
+
+// customização do card do bootstrap
 .card {
   border: none;
   @include transicao-1;
@@ -31,5 +42,54 @@ h1, h2, h3, h4, h5, h6, .label-destacado {
   .card-header {
     border: none;
     background-color: desaturate(lighten($primary, 50), 50);
+  }
+}
+
+// icone com circulo pra chamar atenção de clique
+.area-interativa {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 1em 0;
+  color: $primary;
+  border-radius: 100px;
+  background-color: saturate(lighten($primary, 42), 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .checkbox-fix {
+    &::before {
+      cursor: pointer;
+      top: -0.50rem;
+      left: -1.25rem;
+      border: $primary solid 2px;
+    }
+    &::after {
+      cursor: pointer;
+      top: -0.50rem;
+      left: -1.25rem;
+    }
+  }
+}
+
+#acoes-em-lote {
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .esquerda {
+      display: flex;
+      align-items: center;
+      .area-interativa {
+        margin: 0;
+      }
+      h6 {
+        line-height: 1;
+        margin: 0 .5em;
+      }
+    }
   }
 }

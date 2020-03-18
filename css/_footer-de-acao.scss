@@ -1,13 +1,13 @@
-header {
+#footer-de-acao {
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   left: 260px;
   display: flex;
   justify-content: space-between;
   background-color: white;
   padding: .7em 1em;
-  @include sombra-1;
+  @include sombra-2;
   z-index: 2;
   .direita {
     display: flex;

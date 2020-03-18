@@ -29,34 +29,6 @@
         color: rgba(0,0,0,.7);
       }
     }
-    .area-interativa {
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      min-width: 40px;
-      min-height: 40px;
-      margin: 1em 0;
-      color: $primary;
-      border-radius: 100px;
-      background-color: saturate(lighten($primary, 42), 100);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      .checkbox-fix {
-        &::before {
-          cursor: pointer;
-          top: -0.50rem;
-          left: -1.25rem;
-          border: $primary solid 2px;
-        }
-        &::after {
-          cursor: pointer;
-          top: -0.50rem;
-          left: -1.25rem;
-        }
-      }
-    }
     .informativos {
       margin: 0 1em;
       font-size: 20px;

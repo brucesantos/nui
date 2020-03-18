@@ -1,0 +1,28 @@
+<footer id="footer-de-acao">
+  <div class="esquerda">
+  </div>
+  <div class="direita">
+    <div class="">
+      <a href="#" class="btn btn-light">Outra ação secundária</a>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="btn btn-success">
+        <i class="far fa-check"></i>
+        Aprovar
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+    $('#footer-de-acao').hide();
+    $(':checkbox').click(function() {
+      if ($(':checkbox').prop('checked')) {
+        $('#footer-de-acao').show();
+      } else {
+        $('#footer-de-acao').hide();
+      }
+    });
+  });
+</script>

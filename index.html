@@ -24,6 +24,11 @@
     <script type="text/javascript" src="dependencies/tail.select-0.5.15/js/tail.select.min.js"></script>
     <script type="text/javascript" src="dependencies/tail.select-0.5.15/langs/tail.select-pt_BR.js"></script>
   
+    <!-- input mask -->
+    <script type="text/javascript" src="dependencies/inputmask-1.14.16/jquery.mask.min.js">
+  
+    </script>
+  
     <!-- nosso css, este arquivo é compilado e vc não pode editá-lo -->
     <link rel="stylesheet" href="css/master.css">
   
@@ -222,252 +227,286 @@
           });
         </script>
         
-        <div class="lista">
-                  <div id="card01" class="card card-de-lista">
-                      <div class="card-body">
-                        <div class="custom-control custom-checkbox selecao area-interativa">
-                          <input type="checkbox" class="custom-control-input" id="card01select">
-                          <label class="custom-control-label checkbox-fix" for="card01select"></label>
-                        </div>
-                        <div class="miolo">
-                          <div class="row">
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Nº Doc.</label>
-                              <a href="#">2897891727</a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Tipo</label>
-                              <p>Compra</p>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                              <label>Coligada</label>
-                              <p>Energia dos Ventos 02</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Incluído em</label>
-                              <p>30/05/2020</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Usuário</label>
-                              <p>lpsouza</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Valor</label>
-                              <p><span>R$ </span>54,90</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>C. Custo</label>
-                              <p>2.02.01</p>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                              <label>Fornecedor</label>
-                              <p>ANEEL</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Vencimento</label>
-                              <p>30/06/2020</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Fluxo / Status</label>
-                              <p>Requisição</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="informativos">
-                          <i class="far fa-engine-warning"></i>
-                          <i class="far fa-user-tie"></i>
-                          <i class="far fa-thumbs-up"></i>
-                          <i class="far fa-comments"></i>
-                        </div>
-                        <div class="acoes">
-                          <div class="anexos area-interativa">
-                            <span class="badge badge-pill badge-dark">4</span>
-                            <a href="#">
-                              <i class="far fa-paperclip"></i>
-                            </a>
-                          </div>
-                          <div class="acoes-menu area-interativa">
-                            <a class="" href="#" role="button" id="menuAcoesLista01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fas fa-ellipsis-h"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAcoesLista01">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          </div>
-                        </div>
+        <div id="acoes-em-lote" class="card" style="margin:1em 0;">
+                  <div class="card-body">
+                    <div class="esquerda">
+                      <div class="custom-control custom-checkbox selecao area-interativa">
+                        <input type="checkbox" class="custom-control-input" id="select-total">
+                        <label class="custom-control-label checkbox-fix" for="select-total"></label>
+                      </div>
+                      <div>
+                        <h6>Selecionar Todos</h6>
                       </div>
                     </div>
-                    
-                
-                  <div id="card02" class="card card-de-lista">
-                      <div class="card-body">
-                        <div class="custom-control custom-checkbox selecao area-interativa">
-                          <input type="checkbox" class="custom-control-input" id="card02select">
-                          <label class="custom-control-label checkbox-fix" for="card02select"></label>
-                        </div>
-                        <div class="miolo">
-                          <div class="row">
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Nº Doc.</label>
-                              <a href="#">2897891727</a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Tipo</label>
-                              <p>Compra</p>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                              <label>Coligada</label>
-                              <p>Energia dos Ventos 02</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Incluído em</label>
-                              <p>30/05/2020</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Usuário</label>
-                              <p>lpsouza</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Valor</label>
-                              <p><span>R$ </span>54,90</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>C. Custo</label>
-                              <p>2.02.01</p>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                              <label>Fornecedor</label>
-                              <p>ANEEL</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Vencimento</label>
-                              <p>30/06/2020</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Fluxo / Status</label>
-                              <p>Requisição</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="informativos">
-                          <i class="far fa-engine-warning"></i>
-                          <i class="far fa-user-tie"></i>
-                          <i class="far fa-thumbs-up"></i>
-                          <i class="far fa-comments"></i>
-                        </div>
-                        <div class="acoes">
-                          <div class="anexos area-interativa">
-                            <span class="badge badge-pill badge-dark">4</span>
-                            <a href="#">
-                              <i class="far fa-paperclip"></i>
-                            </a>
-                          </div>
-                          <div class="acoes-menu area-interativa">
-                            <a class="" href="#" role="button" id="menuAcoesLista01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fas fa-ellipsis-h"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAcoesLista01">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="direita acoes-permitidas">
+                      <!-- <a href="#" class="btn btn-primary disabled" aria-disabled="true">
+                        <i class="far fa-check"></i>
+                        Aprovar
+                      </a> -->
                     </div>
-                    
-                
-                  <div id="card03" class="card card-de-lista">
-                      <div class="card-body">
-                        <div class="custom-control custom-checkbox selecao area-interativa">
-                          <input type="checkbox" class="custom-control-input" id="card03select">
-                          <label class="custom-control-label checkbox-fix" for="card03select"></label>
-                        </div>
-                        <div class="miolo">
-                          <div class="row">
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Nº Doc.</label>
-                              <a href="#">2897891727</a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Tipo</label>
-                              <p>Compra</p>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                              <label>Coligada</label>
-                              <p>Energia dos Ventos 02</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Incluído em</label>
-                              <p>30/05/2020</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Usuário</label>
-                              <p>lpsouza</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Valor</label>
-                              <p><span>R$ </span>54,90</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>C. Custo</label>
-                              <p>2.02.01</p>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                              <label>Fornecedor</label>
-                              <p>ANEEL</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Vencimento</label>
-                              <p>30/06/2020</p>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                              <label>Fluxo / Status</label>
-                              <p>Requisição</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="informativos">
-                          <i class="far fa-engine-warning"></i>
-                          <i class="far fa-user-tie"></i>
-                          <i class="far fa-thumbs-up"></i>
-                          <i class="far fa-comments"></i>
-                        </div>
-                        <div class="acoes">
-                          <div class="anexos area-interativa">
-                            <span class="badge badge-pill badge-dark">4</span>
-                            <a href="#">
-                              <i class="far fa-paperclip"></i>
-                            </a>
-                          </div>
-                          <div class="acoes-menu area-interativa">
-                            <a class="" href="#" role="button" id="menuAcoesLista01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fas fa-ellipsis-h"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAcoesLista01">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
+                  </div>
                 </div>
                 
-                <script type="text/javascript">
-                  $('#card01select').click(function() {
-                    if ($(this).prop('checked')) {
-                      $('#card01').addClass('selecionado');
-                    } else {
-                      $('#card01').removeClass('selecionado');
-                    }
-                  });
-                </script>
-                
+        <div class="lista">
+                          <div id="card01" class="card card-de-lista">
+                              <div class="card-body">
+                                <div class="custom-control custom-checkbox selecao area-interativa">
+                                  <input type="checkbox" class="custom-control-input" id="card01select">
+                                  <label class="custom-control-label checkbox-fix" for="card01select"></label>
+                                </div>
+                                <div class="miolo">
+                                  <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Nº Doc.</label>
+                                      <a href="#">2897891727</a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Tipo</label>
+                                      <p>Compra</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                      <label>Coligada</label>
+                                      <p>Energia dos Ventos 02</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Incluído em</label>
+                                      <p>30/05/2020</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Usuário</label>
+                                      <p>lpsouza</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Valor</label>
+                                      <p><span>R$ </span>54,90</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>C. Custo</label>
+                                      <p>2.02.01</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                      <label>Fornecedor</label>
+                                      <p>ANEEL</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Vencimento</label>
+                                      <p>30/06/2020</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Fluxo / Status</label>
+                                      <p>Requisição</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="informativos">
+                                  <i class="far fa-engine-warning"></i>
+                                  <i class="far fa-user-tie"></i>
+                                  <i class="far fa-thumbs-up"></i>
+                                  <i class="far fa-comments"></i>
+                                </div>
+                                <div class="acoes">
+                                  <div class="anexos area-interativa">
+                                    <span class="badge badge-pill badge-dark">4</span>
+                                    <a href="#">
+                                      <i class="far fa-paperclip"></i>
+                                    </a>
+                                  </div>
+                                  <div class="acoes-menu area-interativa">
+                                    <a class="" href="#" role="button" id="menuAcoesLista01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAcoesLista01">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                        
+                          <div id="card02" class="card card-de-lista">
+                              <div class="card-body">
+                                <div class="custom-control custom-checkbox selecao area-interativa">
+                                  <input type="checkbox" class="custom-control-input" id="card02select">
+                                  <label class="custom-control-label checkbox-fix" for="card02select"></label>
+                                </div>
+                                <div class="miolo">
+                                  <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Nº Doc.</label>
+                                      <a href="#">2897891727</a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Tipo</label>
+                                      <p>Compra</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                      <label>Coligada</label>
+                                      <p>Energia dos Ventos 02</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Incluído em</label>
+                                      <p>30/05/2020</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Usuário</label>
+                                      <p>lpsouza</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Valor</label>
+                                      <p><span>R$ </span>54,90</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>C. Custo</label>
+                                      <p>2.02.01</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                      <label>Fornecedor</label>
+                                      <p>ANEEL</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Vencimento</label>
+                                      <p>30/06/2020</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Fluxo / Status</label>
+                                      <p>Requisição</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="informativos">
+                                  <i class="far fa-engine-warning"></i>
+                                  <i class="far fa-user-tie"></i>
+                                  <i class="far fa-thumbs-up"></i>
+                                  <i class="far fa-comments"></i>
+                                </div>
+                                <div class="acoes">
+                                  <div class="anexos area-interativa">
+                                    <span class="badge badge-pill badge-dark">4</span>
+                                    <a href="#">
+                                      <i class="far fa-paperclip"></i>
+                                    </a>
+                                  </div>
+                                  <div class="acoes-menu area-interativa">
+                                    <a class="" href="#" role="button" id="menuAcoesLista01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAcoesLista01">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                        
+                          <div id="card03" class="card card-de-lista">
+                              <div class="card-body">
+                                <div class="custom-control custom-checkbox selecao area-interativa">
+                                  <input type="checkbox" class="custom-control-input" id="card03select">
+                                  <label class="custom-control-label checkbox-fix" for="card03select"></label>
+                                </div>
+                                <div class="miolo">
+                                  <div class="row">
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Nº Doc.</label>
+                                      <a href="#">2897891727</a>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Tipo</label>
+                                      <p>Compra</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                      <label>Coligada</label>
+                                      <p>Energia dos Ventos 02</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Incluído em</label>
+                                      <p>30/05/2020</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Usuário</label>
+                                      <p>lpsouza</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Valor</label>
+                                      <p><span>R$ </span>54,90</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>C. Custo</label>
+                                      <p>2.02.01</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                      <label>Fornecedor</label>
+                                      <p>ANEEL</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Vencimento</label>
+                                      <p>30/06/2020</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                                      <label>Fluxo / Status</label>
+                                      <p>Requisição</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="informativos">
+                                  <i class="far fa-engine-warning"></i>
+                                  <i class="far fa-user-tie"></i>
+                                  <i class="far fa-thumbs-up"></i>
+                                  <i class="far fa-comments"></i>
+                                </div>
+                                <div class="acoes">
+                                  <div class="anexos area-interativa">
+                                    <span class="badge badge-pill badge-dark">4</span>
+                                    <a href="#">
+                                      <i class="far fa-paperclip"></i>
+                                    </a>
+                                  </div>
+                                  <div class="acoes-menu area-interativa">
+                                    <a class="" href="#" role="button" id="menuAcoesLista01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAcoesLista01">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <script type="text/javascript">
+                          $('#card01select').click(function() {
+                            if ($(this).prop('checked')) {
+                              $('#card01').addClass('selecionado');
+                            } else {
+                              $('#card01').removeClass('selecionado');
+                            }
+                          });
+                          $('#card02select').click(function() {
+                            if ($(this).prop('checked')) {
+                              $('#card02').addClass('selecionado');
+                            } else {
+                              $('#card02').removeClass('selecionado');
+                            }
+                          });
+                          $('#card03select').click(function() {
+                            if ($(this).prop('checked')) {
+                              $('#card03').addClass('selecionado');
+                            } else {
+                              $('#card03').removeClass('selecionado');
+                            }
+                          });
+                        </script>
+                        
         <div class="card" style="margin:1em 0;">
           <div class="card-body">
             <div class="row">
@@ -665,7 +704,7 @@
                 </div>
                 
               </div>
-              <div class="col-md-6">
+              <div class="col-md-8">
                 <form>
                   <div class="form-group">
                     <label class="label-destacado" for="formGroupExampleInput">Example label</label>
@@ -700,7 +739,7 @@
                   <hr>
                   <div class="form-group">
                     <label class="label-destacado" for="custom-select">Another label</label>
-                    <select class="custom-select">
+                    <select id="consoles" class="custom-select">
                       <optgroup label="Atari">
                         <option>Atari Lynx</option>
                         <option>Atari Jaguar</option>
@@ -739,11 +778,32 @@
                       </optgroup>
                     </select>
                   </div>
+                  <div class="form-group">
+                    <label class="label-destacado" for="cpf">CPF</label>
+                    <input type="text" class="cpf form-control" id="cpf" placeholder="000.000.000-00">
+                  </div>
+                  <div class="form-group">
+                    <label class="label-destacado" for="money">Valor</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">R$</span>
+                      </div>
+                      <input type="text" class="money form-control" id="money" placeholder="0,00">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="label-destacado" for="cnpj">CNPJ</label>
+                    <input type="text" class="cnpj form-control" id="cnpj" placeholder="00.000.000/0000-00">
+                  </div>
+                  <div class="form-group">
+                    <label class="label-destacado" for="sp_celphones">Telefone</label>
+                    <input type="text" class="sp_celphones form-control" id="sp_celphones" placeholder="(00) 00000-0000">
+                  </div>
                 </form>
                 
                 <script type="text/javascript">
                   document.addEventListener("DOMContentLoaded", function(){
-                    tail.select("select", {
+                    tail.select("#consoles", {
                       animate: true,              // [0.3.0]      Boolean
                       classNames: null,           // [0.2.0]      Boolean, String, Array, null
                       csvOutput: false,           // [0.3.4]      Boolean
@@ -787,7 +847,7 @@
                       sourceHide: true,           // [0.5.0]      Boolean
                       startOpen: false,           // [0.3.0]      Boolean
                       stayOpen: false,            // [0.3.0]      Boolean
-                      width: "auto",                // [0.2.0]      Integer, String, null
+                      width: "100%",                // [0.2.0]      Integer, String, null
                       cbComplete: undefined,      // [0.5.0]      Function
                       cbEmpty: undefined,         // [0.5.0]      Function
                       cbLoopItem: undefined,      // [0.4.0]      Function
@@ -801,6 +861,103 @@
           </div>
         </div>
       </div>
+      <footer id="footer-de-acao">
+        <div class="esquerda">
+        </div>
+        <div class="direita">
+          <div class="">
+            <a href="#" class="btn btn-light">Outra ação secundária</a>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="btn btn-success">
+              <i class="far fa-check"></i>
+              Aprovar
+            </a>
+          </div>
+        </div>
+      </footer>
+      
+      <script type="text/javascript">
+        jQuery(document).ready(function() {
+          $('#footer-de-acao').hide();
+          $(':checkbox').click(function() {
+            if ($(':checkbox').prop('checked')) {
+              $('#footer-de-acao').show();
+            } else {
+              $('#footer-de-acao').hide();
+            }
+          });
+        });
+      </script>
+      
     </section>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.date').mask('00/00/0000');
+        $('.time').mask('00:00:00');
+        $('.date_time').mask('00/00/0000 00:00:00');
+        $('.cep').mask('00000-000');
+        $('.phone').mask('0000-0000');
+        $('.phone_with_ddd').mask('(00) 0000-0000');
+        $('.phone_us').mask('(000) 000-0000');
+        $('.mixed').mask('AAA 000-S0S');
+        $('.ip_address').mask('099.099.099.099');
+        $('.percent').mask('##0,00%', {reverse: true});
+        $('.clear-if-not-match').mask("00/00/0000", {clearIfNotMatch: true});
+        $('.placeholder').mask("00/00/0000", {placeholder: "__/__/____"});
+        $('.fallback').mask("00r00r0000", {
+          translation: {
+            'r': {
+              pattern: /[\/]/,
+              fallback: '/'
+            },
+            placeholder: "__/__/____"
+          }
+        });
+    
+        $('.selectonfocus').mask("00/00/0000", {selectOnFocus: true});
+    
+        $('.cep_with_callback').mask('00000-000', {onComplete: function(cep) {
+            console.log('Mask is done!:', cep);
+          },
+           onKeyPress: function(cep, event, currentField, options){
+            console.log('An key was pressed!:', cep, ' event: ', event, 'currentField: ', currentField.attr('class'), ' options: ', options);
+          },
+          onInvalid: function(val, e, field, invalid, options){
+            var error = invalid[0];
+            console.log ("Digit: ", error.v, " is invalid for the position: ", error.p, ". We expect something like: ", error.e);
+          }
+        });
+    
+        $('.crazy_cep').mask('00000-000', {onKeyPress: function(cep, e, field, options){
+          var masks = ['00000-000', '0-00-00-00'];
+            mask = (cep.length>7) ? masks[1] : masks[0];
+          $('.crazy_cep').mask(mask, options);
+        }});
+    
+        $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
+        $('.cpf').mask('000.000.000-00', {reverse: true});
+        $('.money').mask('#.##0,00', {reverse: true});
+    
+        var SPMaskBehavior = function (val) {
+          return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        spOptions = {
+          onKeyPress: function(val, e, field, options) {
+              field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+    
+        $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+    
+        $(".bt-mask-it").click(function(){
+          $(".mask-on-div").mask("000.000.000-00");
+          $(".mask-on-div").fadeOut(500).fadeIn(500)
+        })
+    
+        $('pre').each(function(i, e) {hljs.highlightBlock(e)});
+      });
+    </script>
+    
   </body>
 </html>

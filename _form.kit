@@ -32,7 +32,7 @@
   <hr>
   <div class="form-group">
     <label class="label-destacado" for="custom-select">Another label</label>
-    <select class="custom-select">
+    <select id="consoles" class="custom-select">
       <optgroup label="Atari">
         <option>Atari Lynx</option>
         <option>Atari Jaguar</option>
@@ -71,11 +71,32 @@
       </optgroup>
     </select>
   </div>
+  <div class="form-group">
+    <label class="label-destacado" for="cpf">CPF</label>
+    <input type="text" class="cpf form-control" id="cpf" placeholder="000.000.000-00">
+  </div>
+  <div class="form-group">
+    <label class="label-destacado" for="money">Valor</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">R$</span>
+      </div>
+      <input type="text" class="money form-control" id="money" placeholder="0,00">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="label-destacado" for="cnpj">CNPJ</label>
+    <input type="text" class="cnpj form-control" id="cnpj" placeholder="00.000.000/0000-00">
+  </div>
+  <div class="form-group">
+    <label class="label-destacado" for="sp_celphones">Telefone</label>
+    <input type="text" class="sp_celphones form-control" id="sp_celphones" placeholder="(00) 00000-0000">
+  </div>
 </form>
 
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function(){
-    tail.select("select", {
+    tail.select("#consoles", {
       animate: true,              // [0.3.0]      Boolean
       classNames: null,           // [0.2.0]      Boolean, String, Array, null
       csvOutput: false,           // [0.3.4]      Boolean
@@ -119,7 +140,7 @@
       sourceHide: true,           // [0.5.0]      Boolean
       startOpen: false,           // [0.3.0]      Boolean
       stayOpen: false,            // [0.3.0]      Boolean
-      width: "auto",                // [0.2.0]      Integer, String, null
+      width: "100%",                // [0.2.0]      Integer, String, null
       cbComplete: undefined,      // [0.5.0]      Function
       cbEmpty: undefined,         // [0.5.0]      Function
       cbLoopItem: undefined,      // [0.4.0]      Function

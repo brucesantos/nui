@@ -17,12 +17,36 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
+	"/_acoes-em-lote.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_acoes-em-lote.html",
+		"oF": 0
+		},
+	"/_card-de-acoes.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_card-de-acoes.html",
+		"oF": 0
+		},
 	"/_filtro.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_filtro.html",
+		"oF": 0
+		},
+	"/_footer-de-acao.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_footer-de-acao.html",
 		"oF": 0
 		},
 	"/_form.kit": {
@@ -71,6 +95,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_menu-lateral.html",
+		"oF": 0
+		},
+	"/_scripts-do-footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_scripts-do-footer.html",
 		"oF": 0
 		},
 	"/_timeline-passo.kit": {
@@ -147,6 +179,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/_filtro.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/css/_footer-de-acao.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_footer-de-acao.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -6285,6 +6330,17 @@
 		"oA": 0,
 		"oAP": "/dependencies/fontawesome-pro-5.12.1-web/webfonts/fa-solid-900.woff2",
 		"oF": 0
+		},
+	"/dependencies/inputmask-1.14.16/jquery.mask.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/inputmask-1.14.16/jquery.mask.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dependencies/tail.select-0.5.15/.gitattributes": {
 		"cB": 0,
