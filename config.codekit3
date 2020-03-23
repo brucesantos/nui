@@ -25,12 +25,28 @@
 		"oAP": "/_acoes-em-lote.html",
 		"oF": 0
 		},
+	"/_busca-select.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_busca-select.html",
+		"oF": 0
+		},
 	"/_card-de-acoes.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_card-de-acoes.html",
+		"oF": 0
+		},
+	"/_cnpj.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_cnpj.html",
 		"oF": 0
 		},
 	"/_filtro.kit": {
@@ -95,6 +111,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_menu-lateral.html",
+		"oF": 0
+		},
+	"/_multi-select.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_multi-select.html",
 		"oF": 0
 		},
 	"/_scripts-do-footer.kit": {
