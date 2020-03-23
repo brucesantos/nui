@@ -145,6 +145,14 @@
 		"oAP": "/_timeline.html",
 		"oF": 0
 		},
+	"/andamento.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/andamento.html",
+		"oF": 0
+		},
 	"/css/_card-de-lista.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -7136,7 +7144,7 @@
 "projectAttributes": {
 	"creationDate": 605816154.16417801,
 	"displayValue": "nui",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "/dependencies/bootstrap-4.4.1/site/docs/4.4/assets/img/favicons/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
 	},
