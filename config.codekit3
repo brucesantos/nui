@@ -25,6 +25,46 @@
 		"oAP": "/_acoes-em-lote.html",
 		"oF": 0
 		},
+	"/_adiantamento_form_dados_principais.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_adiantamento_form_dados_principais.html",
+		"oF": 0
+		},
+	"/_adiantamento_form_dados_principais1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_adiantamento_form_dados_principais1.html",
+		"oF": 0
+		},
+	"/_adiantamento_form_descricao_e_anexos.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_adiantamento_form_descricao_e_anexos.html",
+		"oF": 0
+		},
+	"/_adiantamento_form_requisicao.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_adiantamento_form_requisicao.html",
+		"oF": 0
+		},
+	"/_adiantamento_form_valores_e_pgto.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_adiantamento_form_valores_e_pgto.html",
+		"oF": 0
+		},
 	"/_busca-select.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -47,6 +87,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_cnpj.html",
+		"oF": 0
+		},
+	"/_cpf.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_cpf.html",
 		"oF": 0
 		},
 	"/_filtro.kit": {
@@ -89,6 +137,46 @@
 		"oAP": "/_header.html",
 		"oF": 0
 		},
+	"/_lista-adiantamento.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-adiantamento.html",
+		"oF": 0
+		},
+	"/_lista-card-adiantamento.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card-adiantamento.html",
+		"oF": 0
+		},
+	"/_lista-card-requisicao-dados-principais-adiant.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card-requisicao-dados-principais-adiant.html",
+		"oF": 0
+		},
+	"/_lista-card-requisicao-descricao-eanexos-adiant.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card-requisicao-descricao-eanexos-adiant.html",
+		"oF": 0
+		},
+	"/_lista-card-requisicao-valores-e-pgto-adiant.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card-requisicao-valores-e-pgto-adiant.html",
+		"oF": 0
+		},
 	"/_lista-card.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -129,6 +217,30 @@
 		"oAP": "/_scripts-do-footer.html",
 		"oF": 0
 		},
+	"/_telefone.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_telefone.html",
+		"oF": 0
+		},
+	"/_timeline-adiantamento1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_timeline-adiantamento1.html",
+		"oF": 0
+		},
+	"/_timeline-adiantamento2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_timeline-adiantamento2.html",
+		"oF": 0
+		},
 	"/_timeline-passo.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -145,12 +257,44 @@
 		"oAP": "/_timeline.html",
 		"oF": 0
 		},
-	"/andamento.kit": {
+	"/_timeline_adiantamento.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_timeline_adiantamento.html",
+		"oF": 0
+		},
+	"/_tipo_adiantamento.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_tipo_adiantamento.html",
+		"oF": 0
+		},
+	"/_valor.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_valor.html",
+		"oF": 0
+		},
+	"/adiantamento.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/adiantamento.html",
+		"oF": 0
+		},
+	"/adiantamento.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/andamento.html",
+		"oAP": "/adiantamento.html",
 		"oF": 0
 		},
 	"/css/_card-de-lista.scss": {

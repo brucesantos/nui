@@ -1,0 +1,33 @@
+<div class="lista">
+  <!-- $cardID=card01 -->
+  <!-- @import="lista-card-adiantamento" -->
+
+    <!-- $cardID=card02 -->
+  <!-- @import="lista-card-adiantamento" -->
+
+
+</div>
+
+<script type="text/javascript">
+  $('#card01select').click(function() {
+    if ($(this).prop('checked')) {
+      $('#card01').addClass('selecionado');
+    } else {
+      $('#card01').removeClass('selecionado');
+    }
+  });
+  $('#card02select').click(function() {
+    if ($(this).prop('checked')) {
+      $('#card02').addClass('selecionado');
+    } else {
+      $('#card02').removeClass('selecionado');
+    }
+  });
+  $('#card03select').click(function() {
+    if ($(this).prop('checked')) {
+      $('#card03').addClass('selecionado');
+    } else {
+      $('#card03').removeClass('selecionado');
+    }
+  });
+</script>

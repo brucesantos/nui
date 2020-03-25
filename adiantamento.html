@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<!-- Java Script para Impressão -->
+<script type="text/javascript">
+  function myFunction() {
+    window.print();
+}  
+</script>
+
+<style type="text/css">
+      @media print { 
+          .notprint { visibility:hidden; } 
+      }
+</style>
+
+  <head>
+  
+    <meta charset="utf-8">
+    <title>nui</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- fontawesome - fonte de ícones -->
+    <link rel="stylesheet" href="dependencies/fontawesome-pro-5.12.1-web/css/all.min.css">
+  
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  
+    <!-- bootstrap - scritps. O css esta sendo compilado via SCSS junto no master.css -->
+    <script src="dependencies/bootstrap-4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- daterangepicker - serve pra criar um input único com data ini e data fim usando um calendario -->
+    <script src="dependencies/daterangepicker-3.14.1/moment.min.js"></script>
+    <script src="dependencies/daterangepicker-3.14.1/daterangepicker.min.js"></script>
+  
+    <!-- tail.select - serve pra criar um multi-select com busca -->
+    <link type="text/css" rel="stylesheet" href="dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.min.css" />
+    <script type="text/javascript" src="dependencies/tail.select-0.5.15/js/tail.select.min.js"></script>
+    <script type="text/javascript" src="dependencies/tail.select-0.5.15/langs/tail.select-pt_BR.js"></script>
+  
+    <!-- input mask -->
+    <script type="text/javascript" src="dependencies/inputmask-1.14.16/jquery.mask.min.js">
+  
+    </script>
+  
+    <!-- nosso css, este arquivo é compilado e vc não pode editá-lo -->
+    <link rel="stylesheet" href="css/master.css">
+  
+    <!-- css gambeta -->
+    <!-- <link rel="stylesheet" href="css/gambeta-pra-nao-ter-que-compilar-o-scss.css"> -->
+  
+  </head>
+  
+  <body>
+    <nav id="menu-lateral">
+      <div class="logo">
+        <img src="img/logo.svg" alt="logomarca">
+      </div>
+      <div class="lista">
+        <a href="#submenu1" class="lista__item com-submenu" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" aria-controls="submenu1">
+          <i class="far fa-thumbs-up"></i>
+          <span>Liberação</span>
+        </a>
+        <div id="submenu1" class="submenu collapse">
+          <a href="#" class="lista__item subitem">
+            <span>Sub Item</span>
+          </a>
+          <a href="#" class="lista__item subitem">
+            <span>Outro Sub Item</span>
+          </a>
+          <a href="#" class="lista__item subitem">
+            <span>Último Sub Item</span>
+          </a>
+        </div>
+        <a href="#" class="lista__item">
+          <i class="far fa-square"></i>
+          <span>Outro Item</span>
+        </a>
+        <a href="#" class="lista__item">
+          <i class="far fa-triangle"></i>
+          <span>Último Item</span>
+        </a>
+      </div>
+    </nav>
+    <script type="text/javascript">
+      $('.submenu').on('shown.bs.collapse', function() {
+        $('.com-submenu').addClass('aberto');
+      })
+      $('.submenu').on('hidden.bs.collapse', function() {
+        $('.com-submenu').removeClass('aberto');
+      })
+    </script>
+    
+    <section class="conteudo-da-pagina">
+      <header>
+        <div class="esquerda">
+          <a class="btn btn-light" href="#" role="button"><i class="far fa-chevron-double-left"></i></a>
+        </div>
+        <div class="direita">
+          <div class="notificacoes">
+            <span class="badge badge-pill badge-danger">4</span>
+            <a class="btn btn-light" href="#" role="button"><i class="far fa-bell"></i></a>
+          </div>
+          <div class="dropdown">
+            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Eudes <span class="sobrenome">Penteado</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <div class="header-de-pagina">
+        <h1>Adiantamento</h1>
+      </div>
+      
+      <div class="container-fluid">
+
+        <!-- passo 1 adiantamento inicio -->
+        <div class="card" style="margin:1em 0;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="timeline">
+                  <div class="passo ativo" id="passo01">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-building"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo inativo" id="passo02">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="fal fa-money-check-alt"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo inativo" id="passo03">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-paperclip"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                </div>
+                
+              </div>
+
+              <div class="col-md-8">
+                <div class="mb-4">
+                  <h4>Dados Principais</h4>
+                </div>
+                
+                <form>
+                  <div class="form-group mb-4">
+                      <label class="label-destacado" for="custom-select">Empresa</label>
+                      <select id="busca-select" class="custom-select">
+                        <optgroup label="Atari">
+                          <option>Atari Lynx</option>
+                          <option>Atari Jaguar</option>
+                          <option>Atari Jaguar CD Pro</option>
+                        </optgroup>
+                        <optgroup label="NEC">
+                          <option>TurboGrafx-16</option>
+                          <option>SuperGrafx</option>
+                          <option>TurboExpress</option>
+                          <option>TurboDuo</option>
+                          <option>PC-FX</option>
+                        </optgroup>
+                        <optgroup label="Nintendo">
+                          <option>Super Nintendo</option>
+                          <option>Super Game Boy</option>
+                          <option>Satellaview</option>
+                          <option>Virtual Boy</option>
+                          <option>Nintendo 64</option>
+                          <option>Game Boy Color</option>
+                          <option>Nintendo 64DD</option>
+                        </optgroup>
+                        <optgroup label="Sega">
+                          <option>Mega Drive/Genesis</option>
+                          <option>Sega CD</option>
+                          <option>Sega 32X</option>
+                          <option>Sega Saturn</option>
+                        </optgroup>
+                        <optgroup label="SNK">
+                          <option>Neo-Geo</option>
+                          <option>Neo-Geo CD</option>
+                          <option>Neo Geo Pocket</option>
+                        </optgroup>
+                        <optgroup label="Sony">
+                          <option>PlayStation</option>
+                          <option>PocketStation</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    
+                    <script type="text/javascript">
+                      document.addEventListener("DOMContentLoaded", function(){
+                        tail.select("#busca-select", {
+                          animate: true,              // [0.3.0]      Boolean
+                          classNames: null,           // [0.2.0]      Boolean, String, Array, null
+                          csvOutput: false,           // [0.3.4]      Boolean
+                          csvSeparator: ",",          // [0.3.4]      String
+                          descriptions: false,        // [0.3.0]      Boolean
+                          deselect: false,            // [0.3.0]      Boolean
+                          disabled: false,            // [0.5.0]      Boolean
+                          height: 350,                // [0.2.0]      Integer, null
+                          hideDisabled: false,        // [0.3.0]      Boolean
+                          hideSelected: false,        // [0.3.0]      Boolean
+                          items: {},                  // [0.3.0]      Object
+                          locale: "pt_BR",            // [0.5.0]      String
+                          linguisticRules: {          // [0.5.9]      Object
+                            "е": "ё",
+                            "a": "ä",
+                            "o": "ö",
+                            "u": "ü",
+                            "ss": "ß"
+                          },
+                          multiple: false,             // [0.2.0]      Boolean
+                          multiLimit: Infinity,       // [0.3.0]      Integer, Infinity
+                          multiPinSelected: true,     // [0.5.0]      Boolean
+                          multiContainer: false,      // [0.3.0]      Boolean, String
+                          multiShowCount: true,       // [0.3.0]      Boolean
+                          multiShowLimit: false,      // [0.5.0]      Boolean
+                          multiSelectAll: true,       // [0.4.0]      Boolean
+                          multiSelectGroup: true,     // [0.4.0]      Boolean
+                          openAbove: null,            // [0.3.0]      Boolean, null
+                          placeholder: "opções selecionadas",          // [0.2.0]      String, null
+                          search: true,               // [0.3.0]      Boolean
+                          searchConfig: [             // [0.5.13]     Array
+                            "text", "value"
+                          ],
+                          searchDisabled: false,      // [0.5.5]      Boolean
+                          searchFocus: true,          // [0.3.0]      Boolean
+                          searchMarked: true,         // [0.3.0]      Boolean
+                          searchMinLength: 2,         // [0.5.13]     Integer
+                          sortItems: false,           // [0.3.0]      String, Function, false
+                          sortGroups: false,          // [0.3.0]      String, Function, false
+                          sourceBind: false,          // [0.5.0]      Boolean
+                          sourceHide: true,           // [0.5.0]      Boolean
+                          startOpen: false,           // [0.3.0]      Boolean
+                          stayOpen: false,            // [0.3.0]      Boolean
+                          width: "100%",                // [0.2.0]      Integer, String, null
+                          cbComplete: undefined,      // [0.5.0]      Function
+                          cbEmpty: undefined,         // [0.5.0]      Function
+                          cbLoopItem: undefined,      // [0.4.0]      Function
+                          cbLoopGroup: undefined      // [0.4.0]      Function
+                        });
+                      });
+                    </script>
+                    
+                 
+                   	<label class="label-destacado" for="cnpj">Tipo de Adiantamento</label>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">Fornecedor</label>
+                      </div>
+                      <div class="custom-control custom-radio mb-4">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Funcionário</label>
+                      </div>
+                 
+                  <div class="form-group mb-4">
+                      <label class="label-destacado" for="custom-select">Fornecedor</label>
+                      <select id="busca-select" class="custom-select">
+                        <optgroup label="Atari">
+                          <option>Atari Lynx</option>
+                          <option>Atari Jaguar</option>
+                          <option>Atari Jaguar CD Pro</option>
+                        </optgroup>
+                        <optgroup label="NEC">
+                          <option>TurboGrafx-16</option>
+                          <option>SuperGrafx</option>
+                          <option>TurboExpress</option>
+                          <option>TurboDuo</option>
+                          <option>PC-FX</option>
+                        </optgroup>
+                        <optgroup label="Nintendo">
+                          <option>Super Nintendo</option>
+                          <option>Super Game Boy</option>
+                          <option>Satellaview</option>
+                          <option>Virtual Boy</option>
+                          <option>Nintendo 64</option>
+                          <option>Game Boy Color</option>
+                          <option>Nintendo 64DD</option>
+                        </optgroup>
+                        <optgroup label="Sega">
+                          <option>Mega Drive/Genesis</option>
+                          <option>Sega CD</option>
+                          <option>Sega 32X</option>
+                          <option>Sega Saturn</option>
+                        </optgroup>
+                        <optgroup label="SNK">
+                          <option>Neo-Geo</option>
+                          <option>Neo-Geo CD</option>
+                          <option>Neo Geo Pocket</option>
+                        </optgroup>
+                        <optgroup label="Sony">
+                          <option>PlayStation</option>
+                          <option>PocketStation</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    
+                    <script type="text/javascript">
+                      document.addEventListener("DOMContentLoaded", function(){
+                        tail.select("#busca-select", {
+                          animate: true,              // [0.3.0]      Boolean
+                          classNames: null,           // [0.2.0]      Boolean, String, Array, null
+                          csvOutput: false,           // [0.3.4]      Boolean
+                          csvSeparator: ",",          // [0.3.4]      String
+                          descriptions: false,        // [0.3.0]      Boolean
+                          deselect: false,            // [0.3.0]      Boolean
+                          disabled: false,            // [0.5.0]      Boolean
+                          height: 350,                // [0.2.0]      Integer, null
+                          hideDisabled: false,        // [0.3.0]      Boolean
+                          hideSelected: false,        // [0.3.0]      Boolean
+                          items: {},                  // [0.3.0]      Object
+                          locale: "pt_BR",            // [0.5.0]      String
+                          linguisticRules: {          // [0.5.9]      Object
+                            "е": "ё",
+                            "a": "ä",
+                            "o": "ö",
+                            "u": "ü",
+                            "ss": "ß"
+                          },
+                          multiple: false,             // [0.2.0]      Boolean
+                          multiLimit: Infinity,       // [0.3.0]      Integer, Infinity
+                          multiPinSelected: true,     // [0.5.0]      Boolean
+                          multiContainer: false,      // [0.3.0]      Boolean, String
+                          multiShowCount: true,       // [0.3.0]      Boolean
+                          multiShowLimit: false,      // [0.5.0]      Boolean
+                          multiSelectAll: true,       // [0.4.0]      Boolean
+                          multiSelectGroup: true,     // [0.4.0]      Boolean
+                          openAbove: null,            // [0.3.0]      Boolean, null
+                          placeholder: "opções selecionadas",          // [0.2.0]      String, null
+                          search: true,               // [0.3.0]      Boolean
+                          searchConfig: [             // [0.5.13]     Array
+                            "text", "value"
+                          ],
+                          searchDisabled: false,      // [0.5.5]      Boolean
+                          searchFocus: true,          // [0.3.0]      Boolean
+                          searchMarked: true,         // [0.3.0]      Boolean
+                          searchMinLength: 2,         // [0.5.13]     Integer
+                          sortItems: false,           // [0.3.0]      String, Function, false
+                          sortGroups: false,          // [0.3.0]      String, Function, false
+                          sourceBind: false,          // [0.5.0]      Boolean
+                          sourceHide: true,           // [0.5.0]      Boolean
+                          startOpen: false,           // [0.3.0]      Boolean
+                          stayOpen: false,            // [0.3.0]      Boolean
+                          width: "100%",                // [0.2.0]      Integer, String, null
+                          cbComplete: undefined,      // [0.5.0]      Function
+                          cbEmpty: undefined,         // [0.5.0]      Function
+                          cbLoopItem: undefined,      // [0.4.0]      Function
+                          cbLoopGroup: undefined      // [0.4.0]      Function
+                        });
+                      });
+                    </script>
+                    
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- passo 1 adiantamento fim -->
+
+        <!-- passo 2 adiantamento inicio -->
+        <div class="card" style="margin:1em 0;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="timeline">
+                  <div class="passo ativo" id="passo01">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-building"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo inativo" id="passo02">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="fal fa-money-check-alt"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo inativo" id="passo03">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-paperclip"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                </div>
+                
+              </div>
+
+              <div class="col-md-8">
+                <div class="mb-4">
+                  <h4>Dados Principais</h4>
+                </div>
+                <form>
+                  <div class="form-group mb-4">
+                      <label class="label-destacado" for="custom-select">Empresa</label>
+                      <select id="busca-select" class="custom-select">
+                        <optgroup label="Atari">
+                          <option>Atari Lynx</option>
+                          <option>Atari Jaguar</option>
+                          <option>Atari Jaguar CD Pro</option>
+                        </optgroup>
+                        <optgroup label="NEC">
+                          <option>TurboGrafx-16</option>
+                          <option>SuperGrafx</option>
+                          <option>TurboExpress</option>
+                          <option>TurboDuo</option>
+                          <option>PC-FX</option>
+                        </optgroup>
+                        <optgroup label="Nintendo">
+                          <option>Super Nintendo</option>
+                          <option>Super Game Boy</option>
+                          <option>Satellaview</option>
+                          <option>Virtual Boy</option>
+                          <option>Nintendo 64</option>
+                          <option>Game Boy Color</option>
+                          <option>Nintendo 64DD</option>
+                        </optgroup>
+                        <optgroup label="Sega">
+                          <option>Mega Drive/Genesis</option>
+                          <option>Sega CD</option>
+                          <option>Sega 32X</option>
+                          <option>Sega Saturn</option>
+                        </optgroup>
+                        <optgroup label="SNK">
+                          <option>Neo-Geo</option>
+                          <option>Neo-Geo CD</option>
+                          <option>Neo Geo Pocket</option>
+                        </optgroup>
+                        <optgroup label="Sony">
+                          <option>PlayStation</option>
+                          <option>PocketStation</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    
+                    <script type="text/javascript">
+                      document.addEventListener("DOMContentLoaded", function(){
+                        tail.select("#busca-select", {
+                          animate: true,              // [0.3.0]      Boolean
+                          classNames: null,           // [0.2.0]      Boolean, String, Array, null
+                          csvOutput: false,           // [0.3.4]      Boolean
+                          csvSeparator: ",",          // [0.3.4]      String
+                          descriptions: false,        // [0.3.0]      Boolean
+                          deselect: false,            // [0.3.0]      Boolean
+                          disabled: false,            // [0.5.0]      Boolean
+                          height: 350,                // [0.2.0]      Integer, null
+                          hideDisabled: false,        // [0.3.0]      Boolean
+                          hideSelected: false,        // [0.3.0]      Boolean
+                          items: {},                  // [0.3.0]      Object
+                          locale: "pt_BR",            // [0.5.0]      String
+                          linguisticRules: {          // [0.5.9]      Object
+                            "е": "ё",
+                            "a": "ä",
+                            "o": "ö",
+                            "u": "ü",
+                            "ss": "ß"
+                          },
+                          multiple: false,             // [0.2.0]      Boolean
+                          multiLimit: Infinity,       // [0.3.0]      Integer, Infinity
+                          multiPinSelected: true,     // [0.5.0]      Boolean
+                          multiContainer: false,      // [0.3.0]      Boolean, String
+                          multiShowCount: true,       // [0.3.0]      Boolean
+                          multiShowLimit: false,      // [0.5.0]      Boolean
+                          multiSelectAll: true,       // [0.4.0]      Boolean
+                          multiSelectGroup: true,     // [0.4.0]      Boolean
+                          openAbove: null,            // [0.3.0]      Boolean, null
+                          placeholder: "opções selecionadas",          // [0.2.0]      String, null
+                          search: true,               // [0.3.0]      Boolean
+                          searchConfig: [             // [0.5.13]     Array
+                            "text", "value"
+                          ],
+                          searchDisabled: false,      // [0.5.5]      Boolean
+                          searchFocus: true,          // [0.3.0]      Boolean
+                          searchMarked: true,         // [0.3.0]      Boolean
+                          searchMinLength: 2,         // [0.5.13]     Integer
+                          sortItems: false,           // [0.3.0]      String, Function, false
+                          sortGroups: false,          // [0.3.0]      String, Function, false
+                          sourceBind: false,          // [0.5.0]      Boolean
+                          sourceHide: true,           // [0.5.0]      Boolean
+                          startOpen: false,           // [0.3.0]      Boolean
+                          stayOpen: false,            // [0.3.0]      Boolean
+                          width: "100%",                // [0.2.0]      Integer, String, null
+                          cbComplete: undefined,      // [0.5.0]      Function
+                          cbEmpty: undefined,         // [0.5.0]      Function
+                          cbLoopItem: undefined,      // [0.4.0]      Function
+                          cbLoopGroup: undefined      // [0.4.0]      Function
+                        });
+                      });
+                    </script>
+                    
+                 
+                   	<label class="label-destacado" for="cnpj">Tipo de Adiantamento</label>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">Fornecedor</label>
+                      </div>
+                      <div class="custom-control custom-radio mb-4">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Funcionário</label>
+                      </div>
+                 
+                  <div class="form-group mb-4">
+                      <label class="label-destacado" for="custom-select">Fornecedor</label>
+                      <select id="busca-select" class="custom-select">
+                        <optgroup label="Atari">
+                          <option>Atari Lynx</option>
+                          <option>Atari Jaguar</option>
+                          <option>Atari Jaguar CD Pro</option>
+                        </optgroup>
+                        <optgroup label="NEC">
+                          <option>TurboGrafx-16</option>
+                          <option>SuperGrafx</option>
+                          <option>TurboExpress</option>
+                          <option>TurboDuo</option>
+                          <option>PC-FX</option>
+                        </optgroup>
+                        <optgroup label="Nintendo">
+                          <option>Super Nintendo</option>
+                          <option>Super Game Boy</option>
+                          <option>Satellaview</option>
+                          <option>Virtual Boy</option>
+                          <option>Nintendo 64</option>
+                          <option>Game Boy Color</option>
+                          <option>Nintendo 64DD</option>
+                        </optgroup>
+                        <optgroup label="Sega">
+                          <option>Mega Drive/Genesis</option>
+                          <option>Sega CD</option>
+                          <option>Sega 32X</option>
+                          <option>Sega Saturn</option>
+                        </optgroup>
+                        <optgroup label="SNK">
+                          <option>Neo-Geo</option>
+                          <option>Neo-Geo CD</option>
+                          <option>Neo Geo Pocket</option>
+                        </optgroup>
+                        <optgroup label="Sony">
+                          <option>PlayStation</option>
+                          <option>PocketStation</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    
+                    <script type="text/javascript">
+                      document.addEventListener("DOMContentLoaded", function(){
+                        tail.select("#busca-select", {
+                          animate: true,              // [0.3.0]      Boolean
+                          classNames: null,           // [0.2.0]      Boolean, String, Array, null
+                          csvOutput: false,           // [0.3.4]      Boolean
+                          csvSeparator: ",",          // [0.3.4]      String
+                          descriptions: false,        // [0.3.0]      Boolean
+                          deselect: false,            // [0.3.0]      Boolean
+                          disabled: false,            // [0.5.0]      Boolean
+                          height: 350,                // [0.2.0]      Integer, null
+                          hideDisabled: false,        // [0.3.0]      Boolean
+                          hideSelected: false,        // [0.3.0]      Boolean
+                          items: {},                  // [0.3.0]      Object
+                          locale: "pt_BR",            // [0.5.0]      String
+                          linguisticRules: {          // [0.5.9]      Object
+                            "е": "ё",
+                            "a": "ä",
+                            "o": "ö",
+                            "u": "ü",
+                            "ss": "ß"
+                          },
+                          multiple: false,             // [0.2.0]      Boolean
+                          multiLimit: Infinity,       // [0.3.0]      Integer, Infinity
+                          multiPinSelected: true,     // [0.5.0]      Boolean
+                          multiContainer: false,      // [0.3.0]      Boolean, String
+                          multiShowCount: true,       // [0.3.0]      Boolean
+                          multiShowLimit: false,      // [0.5.0]      Boolean
+                          multiSelectAll: true,       // [0.4.0]      Boolean
+                          multiSelectGroup: true,     // [0.4.0]      Boolean
+                          openAbove: null,            // [0.3.0]      Boolean, null
+                          placeholder: "opções selecionadas",          // [0.2.0]      String, null
+                          search: true,               // [0.3.0]      Boolean
+                          searchConfig: [             // [0.5.13]     Array
+                            "text", "value"
+                          ],
+                          searchDisabled: false,      // [0.5.5]      Boolean
+                          searchFocus: true,          // [0.3.0]      Boolean
+                          searchMarked: true,         // [0.3.0]      Boolean
+                          searchMinLength: 2,         // [0.5.13]     Integer
+                          sortItems: false,           // [0.3.0]      String, Function, false
+                          sortGroups: false,          // [0.3.0]      String, Function, false
+                          sourceBind: false,          // [0.5.0]      Boolean
+                          sourceHide: true,           // [0.5.0]      Boolean
+                          startOpen: false,           // [0.3.0]      Boolean
+                          stayOpen: false,            // [0.3.0]      Boolean
+                          width: "100%",                // [0.2.0]      Integer, String, null
+                          cbComplete: undefined,      // [0.5.0]      Function
+                          cbEmpty: undefined,         // [0.5.0]      Function
+                          cbLoopItem: undefined,      // [0.4.0]      Function
+                          cbLoopGroup: undefined      // [0.4.0]      Function
+                        });
+                      });
+                    </script>
+                    
+                
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="lista">
+              <div id="card01" class="card card-de-lista">
+                  <div class="card-body">
+                    <div class="custom-control custom-checkbox selecao area-interativa">
+                      <input type="checkbox" class="custom-control-input" id="card01select">
+                      <label class="custom-control-label checkbox-fix" for="card01select"></label>
+                    </div>
+                    <div class="miolo y-0 m-0">
+                      <div class="row grid-auto-columns y-0 m-0">
+                
+                        <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                          <label>Filial</label>
+                          <p><a href="#">1</a></p>
+                        </div>
+                        <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                          <label>Emissão</label>
+                          <p>24/05/2020</p>
+                        </div>
+                        <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                          <label>Origem</label>
+                          <p>Ordem de Compra</p>
+                        </div>
+                        <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                          <label>Número</label>
+                          <p>298629</p>
+                        </div>
+                        <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                          <label>Valor</label>
+                          <p>R$ 54,90</p>
+                        </div>
+                        <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                          <label>Total</label>
+                          <p><span>R$ </span>54,90</p>
+                        </div>
+                        <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                          <label>Recebido</label>
+                          <p><span>R$ </span>54,90</p>
+                        </div>
+                        <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                          <label>Pendente</label>
+                          <p><span>R$ </span>54,90</p>
+                        </div>
+                        <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                          <label>Obs.</label>
+                          <p><a href="#">Observação</a></p>
+                        </div>
+                    
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+                
+            
+              <div id="card02" class="card card-de-lista">
+                    <div class="card-body">
+                      <div class="custom-control custom-checkbox selecao area-interativa">
+                        <input type="checkbox" class="custom-control-input" id="card02select">
+                        <label class="custom-control-label checkbox-fix" for="card02select"></label>
+                      </div>
+                      <div class="miolo y-0 m-0">
+                        <div class="row grid-auto-columns y-0 m-0">
+                  
+                          <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                            <label>Filial</label>
+                            <p><a href="#">1</a></p>
+                          </div>
+                          <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                            <label>Emissão</label>
+                            <p>24/05/2020</p>
+                          </div>
+                          <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                            <label>Origem</label>
+                            <p>Ordem de Compra</p>
+                          </div>
+                          <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                            <label>Número</label>
+                            <p>298629</p>
+                          </div>
+                          <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                            <label>Valor</label>
+                            <p>R$ 54,90</p>
+                          </div>
+                          <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                            <label>Total</label>
+                            <p><span>R$ </span>54,90</p>
+                          </div>
+                          <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                            <label>Recebido</label>
+                            <p><span>R$ </span>54,90</p>
+                          </div>
+                          <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                            <label>Pendente</label>
+                            <p><span>R$ </span>54,90</p>
+                          </div>
+                          <div class="col-lg col-md-3 col-sm-6 col-xs-12">
+                            <label>Obs.</label>
+                            <p><a href="#">Observação</a></p>
+                          </div>
+                      
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  
+            
+            
+            </div>
+            
+            <script type="text/javascript">
+              $('#card01select').click(function() {
+                if ($(this).prop('checked')) {
+                  $('#card01').addClass('selecionado');
+                } else {
+                  $('#card01').removeClass('selecionado');
+                }
+              });
+              $('#card02select').click(function() {
+                if ($(this).prop('checked')) {
+                  $('#card02').addClass('selecionado');
+                } else {
+                  $('#card02').removeClass('selecionado');
+                }
+              });
+              $('#card03select').click(function() {
+                if ($(this).prop('checked')) {
+                  $('#card03').addClass('selecionado');
+                } else {
+                  $('#card03').removeClass('selecionado');
+                }
+              });
+            </script>
+            
+        </div>     
+        <!-- passo 2 adiantamento fim -->
+
+
+        <!-- valores pgto 3 adiantamento inicio -->
+        <div class="card" style="margin:1em 0;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="timeline">
+                  <div class="passo passado" id="passo01">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-building"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo ativo" id="passo02">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="fal fa-money-check-alt"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo inativo" id="passo03">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-paperclip"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                </div>
+                
+              </div>
+
+              <div class="col-md-8">
+                <div class="mb-4">
+                  <h4>Valores e Pagamentos</h4>
+                </div>
+                
+                <form>
+                
+                            <div class="form-group mb-4">
+                                          <label class="label-destacado" for="custom-select">Serviços</label>
+                                          <select id="busca-select" class="custom-select">
+                                            <optgroup label="Atari">
+                                              <option>Atari Lynx</option>
+                                              <option>Atari Jaguar</option>
+                                              <option>Atari Jaguar CD Pro</option>
+                                            </optgroup>
+                                            <optgroup label="NEC">
+                                              <option>TurboGrafx-16</option>
+                                              <option>SuperGrafx</option>
+                                              <option>TurboExpress</option>
+                                              <option>TurboDuo</option>
+                                              <option>PC-FX</option>
+                                            </optgroup>
+                                            <optgroup label="Nintendo">
+                                              <option>Super Nintendo</option>
+                                              <option>Super Game Boy</option>
+                                              <option>Satellaview</option>
+                                              <option>Virtual Boy</option>
+                                              <option>Nintendo 64</option>
+                                              <option>Game Boy Color</option>
+                                              <option>Nintendo 64DD</option>
+                                            </optgroup>
+                                            <optgroup label="Sega">
+                                              <option>Mega Drive/Genesis</option>
+                                              <option>Sega CD</option>
+                                              <option>Sega 32X</option>
+                                              <option>Sega Saturn</option>
+                                            </optgroup>
+                                            <optgroup label="SNK">
+                                              <option>Neo-Geo</option>
+                                              <option>Neo-Geo CD</option>
+                                              <option>Neo Geo Pocket</option>
+                                            </optgroup>
+                                            <optgroup label="Sony">
+                                              <option>PlayStation</option>
+                                              <option>PocketStation</option>
+                                            </optgroup>
+                                          </select>
+                                        </div>
+                                        
+                                        <script type="text/javascript">
+                                          document.addEventListener("DOMContentLoaded", function(){
+                                            tail.select("#busca-select", {
+                                              animate: true,              // [0.3.0]      Boolean
+                                              classNames: null,           // [0.2.0]      Boolean, String, Array, null
+                                              csvOutput: false,           // [0.3.4]      Boolean
+                                              csvSeparator: ",",          // [0.3.4]      String
+                                              descriptions: false,        // [0.3.0]      Boolean
+                                              deselect: false,            // [0.3.0]      Boolean
+                                              disabled: false,            // [0.5.0]      Boolean
+                                              height: 350,                // [0.2.0]      Integer, null
+                                              hideDisabled: false,        // [0.3.0]      Boolean
+                                              hideSelected: false,        // [0.3.0]      Boolean
+                                              items: {},                  // [0.3.0]      Object
+                                              locale: "pt_BR",            // [0.5.0]      String
+                                              linguisticRules: {          // [0.5.9]      Object
+                                                "е": "ё",
+                                                "a": "ä",
+                                                "o": "ö",
+                                                "u": "ü",
+                                                "ss": "ß"
+                                              },
+                                              multiple: false,             // [0.2.0]      Boolean
+                                              multiLimit: Infinity,       // [0.3.0]      Integer, Infinity
+                                              multiPinSelected: true,     // [0.5.0]      Boolean
+                                              multiContainer: false,      // [0.3.0]      Boolean, String
+                                              multiShowCount: true,       // [0.3.0]      Boolean
+                                              multiShowLimit: false,      // [0.5.0]      Boolean
+                                              multiSelectAll: true,       // [0.4.0]      Boolean
+                                              multiSelectGroup: true,     // [0.4.0]      Boolean
+                                              openAbove: null,            // [0.3.0]      Boolean, null
+                                              placeholder: "opções selecionadas",          // [0.2.0]      String, null
+                                              search: true,               // [0.3.0]      Boolean
+                                              searchConfig: [             // [0.5.13]     Array
+                                                "text", "value"
+                                              ],
+                                              searchDisabled: false,      // [0.5.5]      Boolean
+                                              searchFocus: true,          // [0.3.0]      Boolean
+                                              searchMarked: true,         // [0.3.0]      Boolean
+                                              searchMinLength: 2,         // [0.5.13]     Integer
+                                              sortItems: false,           // [0.3.0]      String, Function, false
+                                              sortGroups: false,          // [0.3.0]      String, Function, false
+                                              sourceBind: false,          // [0.5.0]      Boolean
+                                              sourceHide: true,           // [0.5.0]      Boolean
+                                              startOpen: false,           // [0.3.0]      Boolean
+                                              stayOpen: false,            // [0.3.0]      Boolean
+                                              width: "100%",                // [0.2.0]      Integer, String, null
+                                              cbComplete: undefined,      // [0.5.0]      Function
+                                              cbEmpty: undefined,         // [0.5.0]      Function
+                                              cbLoopItem: undefined,      // [0.4.0]      Function
+                                              cbLoopGroup: undefined      // [0.4.0]      Function
+                                            });
+                                          });
+                                        </script>
+                                        
+                
+                            <div class="form-row  mb-4">
+                
+                              <div class="col-12">
+                                <label class="label-destacado">Valor / Centro de custo</label>
+                              </div>
+                
+                              <div class="col-4 mb-3">
+                                <input type="text" class="form-control" placeholder="R$ 4,00">
+                              </div>
+                
+                              <div class="form-group col-4 mb-4">
+                                <select class="custom-select">
+                                  <optgroup label="centro">
+                                    <option>Copa e Limpeza</option>
+                                    <option>Copa e Limpeza</option>
+                                  </optgroup>
+                                </select>
+                              </div>
+                
+                              <div class="col-4 mb-3">
+                                <button type="button" class="btn bg-light">
+                                  <i class="far fa-trash-alt"></i>
+                                </button>
+                              </div>
+                               
+                              <div class="col-4 mb-3">
+                                <input type="text" class="form-control" value="R$ 40,00">
+                              </div>
+                
+                              <div class="form-group col-4 mb-4">
+                                <select class="custom-select">
+                                  <optgroup label="centro">
+                                    <option>Tecnologia da Informação</option>
+                                    <option>Copa e Limpeza</option>
+                                  </optgroup>
+                                </select>
+                              </div>
+                
+                              <div class="col-4">
+                                <button type="button" class="btn bg-light">
+                                  <i class="far fa-trash-alt"></i>
+                                </button>
+                              </div>
+                
+                              <div class="col-12 mb-4">
+                                <button class="btn btn-primary btn-sm" type="submit">+ ADICIONAR</button>
+                                <small>Valor Total: <strong>R$ 16,90</strong> (Resta 23,10)</small>
+                              </div>
+                
+                              <div class="form-group col-12">
+                                <label class="label-destacado">Vencimento</label>
+                                <input type="text" class="form-control" placeholder="02/06/2020 - Hoje">
+                              </div>
+                
+                              <div class="col-12">
+                                <div class="form-group mb-4">
+                                                  <label class="label-destacado" for="custom-select">Forma de Pagamento</label>
+                                                  <select id="busca-select" class="custom-select">
+                                                    <optgroup label="Atari">
+                                                      <option>Atari Lynx</option>
+                                                      <option>Atari Jaguar</option>
+                                                      <option>Atari Jaguar CD Pro</option>
+                                                    </optgroup>
+                                                    <optgroup label="NEC">
+                                                      <option>TurboGrafx-16</option>
+                                                      <option>SuperGrafx</option>
+                                                      <option>TurboExpress</option>
+                                                      <option>TurboDuo</option>
+                                                      <option>PC-FX</option>
+                                                    </optgroup>
+                                                    <optgroup label="Nintendo">
+                                                      <option>Super Nintendo</option>
+                                                      <option>Super Game Boy</option>
+                                                      <option>Satellaview</option>
+                                                      <option>Virtual Boy</option>
+                                                      <option>Nintendo 64</option>
+                                                      <option>Game Boy Color</option>
+                                                      <option>Nintendo 64DD</option>
+                                                    </optgroup>
+                                                    <optgroup label="Sega">
+                                                      <option>Mega Drive/Genesis</option>
+                                                      <option>Sega CD</option>
+                                                      <option>Sega 32X</option>
+                                                      <option>Sega Saturn</option>
+                                                    </optgroup>
+                                                    <optgroup label="SNK">
+                                                      <option>Neo-Geo</option>
+                                                      <option>Neo-Geo CD</option>
+                                                      <option>Neo Geo Pocket</option>
+                                                    </optgroup>
+                                                    <optgroup label="Sony">
+                                                      <option>PlayStation</option>
+                                                      <option>PocketStation</option>
+                                                    </optgroup>
+                                                  </select>
+                                                </div>
+                                                
+                                                <script type="text/javascript">
+                                                  document.addEventListener("DOMContentLoaded", function(){
+                                                    tail.select("#busca-select", {
+                                                      animate: true,              // [0.3.0]      Boolean
+                                                      classNames: null,           // [0.2.0]      Boolean, String, Array, null
+                                                      csvOutput: false,           // [0.3.4]      Boolean
+                                                      csvSeparator: ",",          // [0.3.4]      String
+                                                      descriptions: false,        // [0.3.0]      Boolean
+                                                      deselect: false,            // [0.3.0]      Boolean
+                                                      disabled: false,            // [0.5.0]      Boolean
+                                                      height: 350,                // [0.2.0]      Integer, null
+                                                      hideDisabled: false,        // [0.3.0]      Boolean
+                                                      hideSelected: false,        // [0.3.0]      Boolean
+                                                      items: {},                  // [0.3.0]      Object
+                                                      locale: "pt_BR",            // [0.5.0]      String
+                                                      linguisticRules: {          // [0.5.9]      Object
+                                                        "е": "ё",
+                                                        "a": "ä",
+                                                        "o": "ö",
+                                                        "u": "ü",
+                                                        "ss": "ß"
+                                                      },
+                                                      multiple: false,             // [0.2.0]      Boolean
+                                                      multiLimit: Infinity,       // [0.3.0]      Integer, Infinity
+                                                      multiPinSelected: true,     // [0.5.0]      Boolean
+                                                      multiContainer: false,      // [0.3.0]      Boolean, String
+                                                      multiShowCount: true,       // [0.3.0]      Boolean
+                                                      multiShowLimit: false,      // [0.5.0]      Boolean
+                                                      multiSelectAll: true,       // [0.4.0]      Boolean
+                                                      multiSelectGroup: true,     // [0.4.0]      Boolean
+                                                      openAbove: null,            // [0.3.0]      Boolean, null
+                                                      placeholder: "opções selecionadas",          // [0.2.0]      String, null
+                                                      search: true,               // [0.3.0]      Boolean
+                                                      searchConfig: [             // [0.5.13]     Array
+                                                        "text", "value"
+                                                      ],
+                                                      searchDisabled: false,      // [0.5.5]      Boolean
+                                                      searchFocus: true,          // [0.3.0]      Boolean
+                                                      searchMarked: true,         // [0.3.0]      Boolean
+                                                      searchMinLength: 2,         // [0.5.13]     Integer
+                                                      sortItems: false,           // [0.3.0]      String, Function, false
+                                                      sortGroups: false,          // [0.3.0]      String, Function, false
+                                                      sourceBind: false,          // [0.5.0]      Boolean
+                                                      sourceHide: true,           // [0.5.0]      Boolean
+                                                      startOpen: false,           // [0.3.0]      Boolean
+                                                      stayOpen: false,            // [0.3.0]      Boolean
+                                                      width: "100%",                // [0.2.0]      Integer, String, null
+                                                      cbComplete: undefined,      // [0.5.0]      Function
+                                                      cbEmpty: undefined,         // [0.5.0]      Function
+                                                      cbLoopItem: undefined,      // [0.4.0]      Function
+                                                      cbLoopGroup: undefined      // [0.4.0]      Function
+                                                    });
+                                                  });
+                                                </script>
+                                                
+                              </div>
+                            </div>
+                
+                
+                
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>   
+        <!-- valores pgto 3 adiantamento fim -->
+
+
+        <!-- Desc. Anexos 4 adiantamento inicio -->
+        <div class="card" style="margin:1em 0;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="timeline">
+                  <div class="passo passado" id="passo01">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-building"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo passado" id="passo02">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="fal fa-money-check-alt"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                  <div class="passo ativo" id="passo03">
+                          <div class="visual">
+                            <div class="bola">
+                              <i class="far fa-paperclip"></i>
+                            </div>
+                            <div class="linha">
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="titulo-do-passo">Título do Passo</div>
+                            <div class="descritivo-placeholder">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div class="descritivo">
+                              <p class="desc01">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc02">Lorem Ipsum dolor sit amet</p>
+                              <p class="desc03">Lorem Ipsum dolor sit amet</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                
+                </div>
+                
+              </div>
+
+              <div class="col-md-8">
+                <div class="mb-4">
+                  <h4>Descrição e Anexos</h4>
+                </div>
+                
+                <form>
+                
+                  <div class="form-group mb-4">
+                    <label class="label-destacado" for="cnpj">Descrição</label>
+                    <input type="text" class="form-control" placeholder="Teste de adiantamento ao fornecedor">
+                  </div>
+                
+                 
+                  <div class="form-row  mb-4">
+                
+                              <div class="col-12">
+                                <label class="label-destacado">Arquivo Categoria</label>
+                              </div>
+                
+                              <div class="col-4 mb-3">
+                                <input type="text" class="form-control" placeholder="arquivo_33.png">
+                              </div>
+                
+                              <div class="form-group col-4 mb-4">
+                                <select class="custom-select">
+                                  <optgroup label="arquivo">
+                                    <option>Doc. Fiscal, Fatura</option>
+                                    <option>Arquivo_2733.doc</option>
+                                  </optgroup>
+                                </select>
+                              </div>
+                
+                              <div class="col-4 mb-3">
+                                <button type="button" class="btn bg-light">
+                                  <i class="far fa-trash-alt"></i>
+                                </button>
+                              </div>
+                               
+                              <div class="col-4 mb-3">
+                                <input type="text" class="form-control" value="Arquivo_2765.pdf">
+                              </div>
+                
+                              <div class="form-group col-4 mb-4">
+                                <select class="custom-select">
+                                  <optgroup label="centro">
+                                    <option>Boleto</option>
+                                    <option>Boletos</option>
+                                  </optgroup>
+                                </select>
+                              </div>
+                
+                              <div class="col-4">
+                                <button type="button" class="btn bg-light">
+                                  <i class="far fa-trash-alt"></i>
+                                </button>
+                              </div>
+                
+                              <div class="col-12 mb-4">
+                                <button class="btn btn-primary btn-sm" type="submit">+ ADICIONAR</button>
+                              </div>
+                
+                            </div>
+                
+                
+                
+                
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>   
+        <!-- Desc. Anexos 4 adiantamento fim -->
+
+
+        <!-- Desc. Anexos 5 adiantamento inicio -->
+        <div class="card notprint" style="margin:1em 0;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6 label-destacado">
+                Funcionalidades
+              </div>
+              <div class="col-6 text-right">
+               <button class="btn btn-light btn-sm hidden-print" onclick="myFunction()"><i class="fas fa-print"></i> Imprimir</button>
+
+              </div>
+            </div>
+          </div>
+        </div>   
+
+        <div class="card" style="margin:1em 0;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mb-4 text-center">
+                  <h4>REQUISIÇÃO DE ADIANTAMENTO #584427</h4>
+                </div>
+                <div class="row mt-5" id="print">
+                  <div class="col-12">
+                    <h5><i class="far fa-building"></i> Dados Principais</h5>
+                    <div class="card card-de-lista">
+                      <div class="card-body">
+                        <div class="miolo">
+                          <div class="row">
+                    
+                            <div class="col-12">
+                              <label>Empresa</label>
+                              <p> ALUPAR</p>
+                            </div>
+                    
+                            <div class="col-12">
+                              <label>Fornecedor</label>
+                              <p>429 COMÉRCIO, SERVIÇOS E CONFECÇÕES E EIRELI</p>
+                            </div>
+                    
+                            <div class="col-12">
+                              <label>Ordem de Compra</label>
+                              <p>98272982</p>
+                            </div>
+                    
+                            <div class="col-12">
+                              <label>Filial</label>
+                              <p>2</p>
+                            </div>
+                    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-6 mt-5">
+                    <h5><i class="fas fa-paperclip"></i></i> Descrição e Anexos</h5>
+                    <div class="card card-de-lista">
+                      <div class="card-body">
+                        <div class="miolo">
+                          <div class="row">
+                    
+                            <div class="col-12">
+                              <label>Serviços</label>
+                              <p>Fretes e Carretos</p>
+                            </div>
+                    
+                            <div class="col-12">
+                              <label>Descrição</label>
+                              <p>Teste de adiantamento ao fornecedor</p>
+                            </div>
+                    
+                            <div class="col-12">
+                              <label>Doc. Fiscal, Fatura</label>
+                              <p><a href="#">arquivo_2412-doc.png</a></p>
+                            </div>
+                    
+                            <div class="col-12">
+                              <label>Boleto</label>
+                              <p><a href="#">File-2020-.pdf</a></p>
+                            </div>
+                    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-6 mt-5">
+                    <h5><i class="fas fa-money-check-alt"></i>  Valores e Pagamentos</h5>
+                    <div class="card card-de-lista">
+                      <div class="card-body">
+                        <div class="miolo">
+                          <div class="row">
+                    
+                            <div class="col-12">
+                              <label>Copa e Limpeza - 251</label>
+                              <p>R$ 4,90</p>
+                            </div>
+                    
+                            <div class="col-12">
+                              <label>Tecnologia da infoormação</label>
+                              <p>R$ 12,00</p>
+                            </div>
+                    
+                            <div class="col-12">
+                              <label>Total</label>
+                              <p>16,90</p>
+                            </div>
+                    
+                            <div class="col-12">
+                              <label>Forma de Pagamento</label>
+                              <p><a href="#">BOLETO BANCÁRIO</a></p>
+                            </div>
+                    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>   
+        <!-- Desc. Anexos 5 adiantamento fim -->
+
+      </div>
+      
+
+     
+
+      <footer id="footer-de-acao">
+        <div class="esquerda">
+        </div>
+        <div class="direita">
+          <div class="">
+            <a href="#" class="btn btn-light">Outra ação secundária</a>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="btn btn-success">
+              <i class="far fa-check"></i>
+              Aprovar
+            </a>
+          </div>
+        </div>
+      </footer>
+      
+      <script type="text/javascript">
+        jQuery(document).ready(function() {
+          $('#footer-de-acao').hide();
+          $(':checkbox').click(function() {
+            if ($(':checkbox').prop('checked')) {
+              $('#footer-de-acao').show();
+            } else {
+              $('#footer-de-acao').hide();
+            }
+          });
+        });
+      </script>
+      
+    </section>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.date').mask('00/00/0000');
+        $('.time').mask('00:00:00');
+        $('.date_time').mask('00/00/0000 00:00:00');
+        $('.cep').mask('00000-000');
+        $('.phone').mask('0000-0000');
+        $('.phone_with_ddd').mask('(00) 0000-0000');
+        $('.phone_us').mask('(000) 000-0000');
+        $('.mixed').mask('AAA 000-S0S');
+        $('.ip_address').mask('099.099.099.099');
+        $('.percent').mask('##0,00%', {reverse: true});
+        $('.clear-if-not-match').mask("00/00/0000", {clearIfNotMatch: true});
+        $('.placeholder').mask("00/00/0000", {placeholder: "__/__/____"});
+        $('.fallback').mask("00r00r0000", {
+          translation: {
+            'r': {
+              pattern: /[\/]/,
+              fallback: '/'
+            },
+            placeholder: "__/__/____"
+          }
+        });
+    
+        $('.selectonfocus').mask("00/00/0000", {selectOnFocus: true});
+    
+        $('.cep_with_callback').mask('00000-000', {onComplete: function(cep) {
+            console.log('Mask is done!:', cep);
+          },
+           onKeyPress: function(cep, event, currentField, options){
+            console.log('An key was pressed!:', cep, ' event: ', event, 'currentField: ', currentField.attr('class'), ' options: ', options);
+          },
+          onInvalid: function(val, e, field, invalid, options){
+            var error = invalid[0];
+            console.log ("Digit: ", error.v, " is invalid for the position: ", error.p, ". We expect something like: ", error.e);
+          }
+        });
+    
+        $('.crazy_cep').mask('00000-000', {onKeyPress: function(cep, e, field, options){
+          var masks = ['00000-000', '0-00-00-00'];
+            mask = (cep.length>7) ? masks[1] : masks[0];
+          $('.crazy_cep').mask(mask, options);
+        }});
+    
+        $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
+        $('.cpf').mask('000.000.000-00', {reverse: true});
+        $('.money').mask('#.##0,00', {reverse: true});
+    
+        var SPMaskBehavior = function (val) {
+          return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        spOptions = {
+          onKeyPress: function(val, e, field, options) {
+              field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+    
+        $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+    
+        $(".bt-mask-it").click(function(){
+          $(".mask-on-div").mask("000.000.000-00");
+          $(".mask-on-div").fadeOut(500).fadeIn(500)
+        })
+    
+        $('pre').each(function(i, e) {hljs.highlightBlock(e)});
+      });
+    </script>
+    
+  </body>
+</html>
