@@ -129,6 +129,14 @@
 		"oAP": "/_data.html",
 		"oF": 0
 		},
+	"/_documentos-pedido.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_documentos-pedido.html",
+		"oF": 0
+		},
 	"/_filtro.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -191,6 +199,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_lista-card-adiantamento.html",
+		"oF": 0
+		},
+	"/_lista-card-documento.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card-documento.html",
 		"oF": 0
 		},
 	"/_lista-card-pedido-reembolso.kit": {
@@ -297,6 +313,30 @@
 		"oAP": "/_reembolso_form_dados_principais.html",
 		"oF": 0
 		},
+	"/_requisicao-compra-anexos.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_requisicao-compra-anexos.html",
+		"oF": 0
+		},
+	"/_requisicao-compra-form-dados-principais.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_requisicao-compra-form-dados-principais.html",
+		"oF": 0
+		},
+	"/_requisicao-compra-rateio.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_requisicao-compra-rateio.html",
+		"oF": 0
+		},
 	"/_scripts-do-footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -327,6 +367,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_timeline-passo.html",
+		"oF": 0
+		},
+	"/_timeline-requisicao-compra.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_timeline-requisicao-compra.html",
 		"oF": 0
 		},
 	"/_timeline.kit": {
@@ -7334,6 +7382,22 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/documento.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/documento.html",
+		"oF": 0
+		},
+	"/documento.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/documento.html",
+		"oF": 0
+		},
 	"/img/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -7392,20 +7456,36 @@
 		"oAP": "/reembolso.html",
 		"oF": 0
 		},
-	"/requisicao.html": {
+	"/requisicao-de-adiantamento.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/requisicao.html",
+		"oAP": "/requisicao-de-adiantamento.html",
 		"oF": 0
 		},
-	"/requisicao.kit": {
+	"/requisicao-de-adiantamento.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/requisicao.html",
+		"oAP": "/requisicao-de-adiantamento.html",
+		"oF": 0
+		},
+	"/requisicao-de-compra.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/requisicao-de-compra.html",
+		"oF": 0
+		},
+	"/requisicao-de-compra.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/requisicao-de-compra.html",
 		"oF": 0
 		}
 	},

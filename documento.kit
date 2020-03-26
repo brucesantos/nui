@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<!-- Java Script para Impressão -->
+<script type="text/javascript">
+  function myFunction() {
+    window.print();
+}  
+</script>
+
+  <!-- @import="head" -->
+  <body>
+    <!-- @import="menu-lateral" -->
+    <section class="conteudo-da-pagina">
+      <!-- @import="header" -->
+      <div class="header-de-pagina">
+        <h1>Documento</h1>
+      </div>
+      
+      <div class="container-fluid">
+    
+        <!-- documento inicio -->
+        
+
+        <div class="card" style="margin:1em 0;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-4 text-center">
+                  <h4>DOCUMENTO #584427</h4>
+                </div>
+              </div>
+              <div class="col-4">
+                </div>
+                <div class="alert alert-warning col-4 text-center" role="alert">
+                    <i class="fas fa-exclamation-circle"></i> CRÍTICO <i>Pagamento atrasado</i>
+                </div>
+
+              <div class="col-4"></div>
+                <div class="col-12 mt-5">
+                   <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Dados Principais</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Itens</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a>
+                        <a class="dropdown-item" href="#">Item 2</a>
+                        <a class="dropdown-item" href="#">Item 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Item 4</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Rateio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Histórico</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Detalhes</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 mb-5"><hr></div>
+                <div class="col-12">
+                <!-- @import="_documentos-pedido.kit" -->
+                </div>
+              
+            </div>
+          </div>
+        </div>   
+        <!-- documento fim -->
+
+      </div>
+      
+
+     
+
+      
+    </section>
+    <!-- @import="scripts-do-footer" -->
+  </body>
+</html>
