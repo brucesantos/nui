@@ -233,6 +233,30 @@
 		"oAP": "/_lista-card-requisicao-dados-principais-adiant.html",
 		"oF": 0
 		},
+	"/_lista-card-requisicao-dados-principais-compras.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card-requisicao-dados-principais-compras.html",
+		"oF": 0
+		},
+	"/_lista-card-requisicao-de-compra-itens-adic.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card-requisicao-de-compra-itens-adic.html",
+		"oF": 0
+		},
+	"/_lista-card-requisicao-de-compra-rateio.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card-requisicao-de-compra-rateio.html",
+		"oF": 0
+		},
 	"/_lista-card-requisicao-descricao-eanexos-adiant.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -249,6 +273,14 @@
 		"oAP": "/_lista-card-requisicao-valores-e-pgto-adiant.html",
 		"oF": 0
 		},
+	"/_lista-card-requisicao.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-card-requisicao.html",
+		"oF": 0
+		},
 	"/_lista-card.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -263,6 +295,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_lista-reembolso.html",
+		"oF": 0
+		},
+	"/_lista-requisicao.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_lista-requisicao.html",
 		"oF": 0
 		},
 	"/_lista.kit": {
@@ -313,6 +353,14 @@
 		"oAP": "/_reembolso_form_dados_principais.html",
 		"oF": 0
 		},
+	"/_requisicao-adicionar-item.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_requisicao-adicionar-item.html",
+		"oF": 0
+		},
 	"/_requisicao-compra-anexos.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -335,6 +383,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_requisicao-compra-rateio.html",
+		"oF": 0
+		},
+	"/_requisicao-de-compra-form-pedido.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_requisicao-de-compra-form-pedido.html",
 		"oF": 0
 		},
 	"/_scripts-do-footer.kit": {
@@ -6646,6 +6702,56 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dependencies/range/_bootstrap-slider.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dependencies/range/_bootstrap-slider.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/dependencies/range/_bootstrap-slider.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/range/_bootstrap-slider.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/range/_jquery.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dependencies/range/_jquery.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dependencies/range/_nao-usado-error-bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "/dependencies/range/_nao-usado-error-bootstrap.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/dependencies/range/range-teste.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dependencies/range/range-teste.html",
+		"oF": 0
+		},
 	"/dependencies/tail.select-0.5.15/.gitattributes": {
 		"cB": 0,
 		"ft": 8192,
@@ -7470,6 +7576,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/requisicao-de-adiantamento.html",
+		"oF": 0
+		},
+	"/requisicao-de-compra-pedido.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/requisicao-de-compra-pedido.html",
+		"oF": 0
+		},
+	"/requisicao-de-compra-pedido.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/requisicao-de-compra-pedido.html",
 		"oF": 0
 		},
 	"/requisicao-de-compra.html": {

@@ -1,0 +1,83 @@
+
+
+    <!-- core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="_bootstrap-slider.css" rel="stylesheet">
+    <!-- Hightlight.js Theme Styles -->
+  
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+
+    	/* Space out content a bit */
+			body {
+			  padding-top: 120px;
+			  padding-bottom: 20px;
+			}
+
+
+    </style>
+
+    <style type="text/css">
+				#slider12a .slider-track-high, #slider12c .slider-track-high {
+	background: green;
+}
+
+#slider12b .slider-track-low, #slider12c .slider-track-low {
+	background: red;
+}
+
+#slider12c .slider-selection {
+	background: yellow;
+}
+    </style>
+	
+
+
+  <body style="">
+
+
+
+
+    
+  <input id="ex12a" type="text" data-value="5" value="5" style="display: none;">
+  	<input id="ex12b" type="text" data-value="3,7" value="3,7" style="display: none;">
+
+      <input id="ex12c" type="text" data-value="3,7" value="3,7" style="display: none;">
+ 
+
+
+
+    <script type="text/javascript" src="_jquery.min.js"></script>
+    <script type="text/javascript" src="_bootstrap-slider.js"></script>
+
+   
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		
+
+			/* Example 12 */
+			$("#ex12a").slider({
+				id: "slider12a",
+				min: 0,
+				max: 10,
+				value: 5
+            });
+			$("#ex12b").slider({
+				id: "slider12b",
+				min: 0,
+				max: 10,
+				range: true,
+				value: [ 3, 7 ]
+			});
+			$("#ex12c").slider({
+				id: "slider12c",
+				min: 0,
+				max: 10,
+				range: true,
+				value: [ 3, 7 ]
+			});
+
+			
+		});
+    </script>
+  
