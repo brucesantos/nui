@@ -25,6 +25,22 @@
 		"oAP": "/_acoes-em-lote.html",
 		"oF": 0
 		},
+	"/_adiantamento-form-dados-principais.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_adiantamento-form-dados-principais.html",
+		"oF": 0
+		},
+	"/_adiantamento-form-descricao-e-anexos.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_adiantamento-form-descricao-e-anexos.html",
+		"oF": 0
+		},
 	"/_adiantamento-form-requisicao.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -33,44 +49,12 @@
 		"oAP": "/_adiantamento-form-requisicao.html",
 		"oF": 0
 		},
-	"/_adiantamento_form_dados_principais.kit": {
+	"/_adiantamento-form-valores-e-pgto.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_adiantamento_form_dados_principais.html",
-		"oF": 0
-		},
-	"/_adiantamento_form_dados_principais1.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_adiantamento_form_dados_principais1.html",
-		"oF": 0
-		},
-	"/_adiantamento_form_descricao_e_anexos.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_adiantamento_form_descricao_e_anexos.html",
-		"oF": 0
-		},
-	"/_adiantamento_form_valores_e_pgto.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_adiantamento_form_valores_e_pgto.html",
-		"oF": 0
-		},
-	"/_adicionar_despesa.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_adicionar_despesa.html",
+		"oAP": "/_adiantamento-form-valores-e-pgto.html",
 		"oF": 0
 		},
 	"/_anexar-arquivo.kit": {
@@ -337,20 +321,20 @@
 		"oAP": "/_reembolso-form-adicionar-despesa.html",
 		"oF": 0
 		},
+	"/_reembolso-form-dados-principais.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_reembolso-form-dados-principais.html",
+		"oF": 0
+		},
 	"/_reembolso-form-pedido.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_reembolso-form-pedido.html",
-		"oF": 0
-		},
-	"/_reembolso_form_dados_principais.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_reembolso_form_dados_principais.html",
 		"oF": 0
 		},
 	"/_requisicao-adicionar-item.kit": {
@@ -425,6 +409,14 @@
 		"oAP": "/_timeline-passo.html",
 		"oF": 0
 		},
+	"/_timeline-reembolso.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_timeline-reembolso.html",
+		"oF": 0
+		},
 	"/_timeline-requisicao-compra.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -439,14 +431,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_timeline.html",
-		"oF": 0
-		},
-	"/_timeline_reembolso.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_timeline_reembolso.html",
 		"oF": 0
 		},
 	"/_tipo-adiantamento.kit": {
