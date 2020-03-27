@@ -8029,6 +8029,12 @@ h1, h2, h3, h4, h5, h6, .label-destacado {
   .card .card-header {
     border: none;
     background-color: #f7f9fa; }
+  .card .card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    cursor: default; }
+    .card .card:hover {
+      box-shadow: none; }
 
 .area-interativa {
   cursor: pointer;

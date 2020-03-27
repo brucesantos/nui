@@ -43,6 +43,15 @@ h1, h2, h3, h4, h5, h6, .label-destacado {
     border: none;
     background-color: desaturate(lighten($primary, 50), 50);
   }
+  // para cards que ficam dentro de cards
+  .card {
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: none;
+    cursor: default;
+    &:hover {
+      box-shadow: none;
+    }
+  }
 }
 
 // icone com circulo pra chamar atenção de clique
