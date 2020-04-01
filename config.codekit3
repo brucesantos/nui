@@ -465,6 +465,22 @@
 		"oAP": "/adiantamento.html",
 		"oF": 0
 		},
+	"/alert-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/alert-success.html",
+		"oF": 0
+		},
+	"/alert-success.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/alert-success.html",
+		"oF": 0
+		},
 	"/css/_card-de-lista.scss": {
 		"aP": 0,
 		"bl": 0,

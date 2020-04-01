@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <!-- @import="head" -->
+  <body>     
+      <div class="container-fluid">
+        <div>
+          <div class="modal fade" id="demoModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Com sucesso ini -->
+                <div class="modal-header">
+                  <h6 class="modal-title text-success"><i class="fas fa-check"></i> Sucesso!</h6>
+                  <button type="button" class="close" data-dismiss="modal">
+                      <span>&times;</span>
+                  </button>
+                </div>
+                <!-- Com sucesso fim -->
+
+                <!-- Sem sucesso ini -->
+                <!--
+                <div class="modal-header">
+                    <h6 class="modal-title text-danger"><i class="far fa-thumbs-down"></i> Sem sucesso!</h6>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                -->
+                <!-- Sem sucesso fim -->
+                <div class="modal-body">
+                    <p>Aprovação realizada com sucesso</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="container">       
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demoModal">Enviar</button>
+                </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
