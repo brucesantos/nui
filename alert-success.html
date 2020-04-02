@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
+
   <head>
   
     <meta charset="utf-8">
@@ -37,44 +38,41 @@
   
   </head>
   
-  <body>     
-      <div class="container-fluid">
-        <div>
-          <div class="modal fade" id="demoModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <!-- Com sucesso ini -->
-                <div class="modal-header">
-                  <h6 class="modal-title text-success"><i class="fas fa-check"></i> Sucesso!</h6>
-                  <button type="button" class="close" data-dismiss="modal">
-                      <span>&times;</span>
-                  </button>
-                </div>
-                <!-- Com sucesso fim -->
+  
+  <body>
 
-                <!-- Sem sucesso ini -->
-                <!--
-                <div class="modal-header">
-                    <h6 class="modal-title text-danger"><i class="far fa-thumbs-down"></i> Sem sucesso!</h6>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span>&times;</span>
-                    </button>
-                </div>
-                -->
-                <!-- Sem sucesso fim -->
-                <div class="modal-body">
-                    <p>Aprovação realizada com sucesso</p>
-                </div>
-              </div>
-          </div>
+    <div class="container-fluid">
+        <div class="toast" role="alert" aria-live="polite" aria-atomic="true" data-delay="10000" id="myToast" style="position: fixed; absolute; top: 10%; right: 0; z-index: 1">
+        <div class="toast-header">
+            <span class="bg-success rounded" style="width: 20px">&nbsp;</span>
+            <strong class="mr-auto">&nbsp;Sucesso!</strong>
+            <small>Agora</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-        <div class="container">       
-            <div class="row">
-                <div class="col">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demoModal">Enviar</button>
-                </div>
-            </div>
+        <div class="toast-body">
+            <div>Aprovação realizada com sucesso!</a></div>
         </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".show-toast").click(function(){
+                $("#myToast").toast('show');
+            });
+        });
+    </script>
+
+
+    <div>
+      <button type="button" class="btn btn-primary show-toast">Mostrar Toast</button>
+    </div>
+  
+
+
       </div>
+
   </body>
 </html>
