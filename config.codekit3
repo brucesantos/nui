@@ -465,20 +465,20 @@
 		"oAP": "/adiantamento.html",
 		"oF": 0
 		},
-	"/alert-success.html": {
+	"/aprovacao.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/alert-success.html",
+		"oAP": "/aprovacao.html",
 		"oF": 0
 		},
-	"/alert-success.kit": {
+	"/aprovacao.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/alert-success.html",
+		"oAP": "/aprovacao.html",
 		"oF": 0
 		},
 	"/css/_card-de-lista.scss": {

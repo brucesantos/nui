@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+  
+    <meta charset="utf-8">
+    <title>nui</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- fontawesome - fonte de ícones -->
+    <link rel="stylesheet" href="dependencies/fontawesome-pro-5.12.1-web/css/all.min.css">
+  
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  
+    <!-- bootstrap - scritps. O css esta sendo compilado via SCSS junto no master.css -->
+    <script src="dependencies/bootstrap-4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- daterangepicker - serve pra criar um input único com data ini e data fim usando um calendario -->
+    <script src="dependencies/daterangepicker-3.14.1/moment.min.js"></script>
+    <script src="dependencies/daterangepicker-3.14.1/daterangepicker.min.js"></script>
+  
+    <!-- tail.select - serve pra criar um multi-select com busca -->
+    <link type="text/css" rel="stylesheet" href="dependencies/tail.select-0.5.15/css/bootstrap4/tail.select-default.min.css" />
+    <script type="text/javascript" src="dependencies/tail.select-0.5.15/js/tail.select.min.js"></script>
+    <script type="text/javascript" src="dependencies/tail.select-0.5.15/langs/tail.select-pt_BR.js"></script>
+  
+    <!-- input mask -->
+    <script type="text/javascript" src="dependencies/inputmask-1.14.16/jquery.mask.min.js">
+  
+    </script>
+  
+    <!-- nosso css, este arquivo é compilado e vc não pode editá-lo -->
+    <link rel="stylesheet" href="css/master.css">
+  
+    <!-- css gambeta -->
+    <!-- <link rel="stylesheet" href="css/gambeta-pra-nao-ter-que-compilar-o-scss.css"> -->
+  
+  </head>
+  
+
+
+  <body>
+    <nav id="menu-lateral">
+      <div class="logo">
+        <img src="img/logo.svg" alt="logomarca">
+      </div>
+      <div class="lista">
+        <a href="#submenu1" class="lista__item com-submenu" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" aria-controls="submenu1">
+          <i class="far fa-thumbs-up"></i>
+          <span>Liberação</span>
+        </a>
+        <div id="submenu1" class="submenu collapse">
+          <a href="#" class="lista__item subitem">
+            <span>Sub Item</span>
+          </a>
+          <a href="#" class="lista__item subitem">
+            <span>Outro Sub Item</span>
+          </a>
+          <a href="#" class="lista__item subitem">
+            <span>Último Sub Item</span>
+          </a>
+        </div>
+        <a href="#" class="lista__item">
+          <i class="far fa-square"></i>
+          <span>Outro Item</span>
+        </a>
+        <a href="#" class="lista__item">
+          <i class="far fa-triangle"></i>
+          <span>Último Item</span>
+        </a>
+      </div>
+    </nav>
+    <script type="text/javascript">
+      $('.submenu').on('shown.bs.collapse', function() {
+        $('.com-submenu').addClass('aberto');
+      })
+      $('.submenu').on('hidden.bs.collapse', function() {
+        $('.com-submenu').removeClass('aberto');
+      })
+    </script>
+    
+    <section class="conteudo-da-pagina">
+      <header>
+        <div class="esquerda">
+          <a class="btn btn-light" href="#" role="button"><i class="far fa-chevron-double-left"></i></a>
+        </div>
+        <div class="direita">
+          <div class="notificacoes">
+            <span class="badge badge-pill badge-danger">6</span>
+            <a class="btn btn-light" href="#" role="button"><i class="far fa-bell"></i></a>
+          </div>
+          <div class="dropdown">
+            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Eudes <span class="sobrenome">Penteado</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <div class="header-de-pagina">
+        <h1>Aprovação</h1>
+      </div>
+      <div class="container-fluid">
+        <div id="filtro" class="card" style="margin:1em 0;">
+          <div class="card-header">
+            <h4>Filtros</h4>
+            <i class="far fa-minus-circle" data-toggle="collapse" data-target="#form-filtros" aria-expanded="true" aria-controls="form-filtros"></i>
+          </div>
+          <div id="form-filtros" class="collapse show" aria-labelledby="headingOne" data-parent="#filtro">
+            <div class="card-body">
+              <form class="" action="" method="">
+                <div class="row">
+                  <div class="form-group col-md-3 col-xl-2">
+                    <label class="label-destacado" for="formGroupExampleInput">Usuário</label>
+                    <input type="text" class="form-control" id="nomeUser" placeholder="nome do usuário">
+                  </div>
+                  <div class="form-group col-md-5 col-xl-3">
+                    <label class="label-destacado" for="periodo">Período</label>
+                    <input id="input-periodo" type="text" name="periodo" class="form-control" value="01/01/2018 - 01/15/2018">
+                  </div>
+                  <div class="form-group col-md-4 col-xl-3">
+                    <label class="label-destacado" for="custom-select">Coligada</label>
+                    <select class="custom-select">
+                      <option selected>Alupita</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3 col-xl-2">
+                    <label class="label-destacado" for="custom-select">Tipo</label>
+                    <select class="custom-select">
+                      <option selected>Tipo um</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-5 col-xl-2">
+                    <label class="label-destacado" for="custom-select">Ordenar por</label>
+                    <select class="custom-select">
+                      <option selected>Tipo um</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-end">
+                  <a class="btn btn-light" href="#" role="button">Limpar Filtros</a>
+                  <a class="btn btn-primary" href="#" role="button" style="margin-left:1em;">Filtrar</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <script type="text/javascript">
+          // troca o icone do botão de toggle para abrir e fechar
+          $('#form-filtros').on('shown.bs.collapse', function() {
+            console.log('teste aberto');
+            $('.card-header i').addClass('fa-minus-circle');
+            $('.card-header i').removeClass('fa-plus-circle');
+          })
+          $('#form-filtros').on('hidden.bs.collapse', function() {
+            console.log('teste fechado');
+            $('.card-header i').removeClass('fa-minus-circle');
+            $('.card-header i').addClass('fa-plus-circle');
+          })
+          // inicia o calendario para selecao de periodo
+          $('#input-periodo').daterangepicker({
+              "maxYear": 5,
+              "autoApply": true,
+              ranges: {
+                  'Hoje': [moment(), moment()],
+                  'Ontem': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                  'Últimos 7 Dias': [moment().subtract(6, 'days'), moment()],
+                  'Últimos 30 Dias': [moment().subtract(29, 'days'), moment()],
+                  'Este Mês': [moment().startOf('month'), moment().endOf('month')],
+                  'Último Mês': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+              },
+              "locale": {
+                  "format": "DD/MM/YYYY",
+                  "separator": " - ",
+                  "applyLabel": "Aplicar",
+                  "cancelLabel": "Cancelar",
+                  "fromLabel": "De",
+                  "toLabel": "Até",
+                  "customRangeLabel": "Manual",
+                  "weekLabel": "S",
+                  "daysOfWeek": [
+                      "Do",
+                      "Se",
+                      "Te",
+                      "Qu",
+                      "Qu",
+                      "Se",
+                      "Sa"
+                  ],
+                  "monthNames": [
+                      "Janeiro",
+                      "Fevereiro",
+                      "Março",
+                      "Abril",
+                      "Maio",
+                      "Junho",
+                      "Julho",
+                      "Agosto",
+                      "Setembro",
+                      "Outubro",
+                      "Novembro",
+                      "Dezembro"
+                  ],
+                  "firstDay": 1
+              },
+              "parentEl": "form-filtros",
+              "startDate": "01/02/2020",
+              "endDate": "01/03/2020",
+              "minDate": "01/01/2010",
+              "maxDate": "01/01/2030"
+          }, function(start, end, label) {
+            console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+          });
+        </script>
+        
+        <div class="lista">
+                  <div id="card01" class="card card-de-lista">
+                      <div class="card-body">
+                        <div class="custom-control custom-checkbox selecao area-interativa">
+                          <input type="checkbox" class="custom-control-input" id="card01select">
+                          <label class="custom-control-label checkbox-fix" for="card01select"></label>
+                        </div>
+                        <div class="miolo">
+                          <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Nº Doc.</label>
+                              <a href="#">2897891727</a>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Tipo</label>
+                              <p>Compra</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                              <label>Coligada</label>
+                              <p>Energia dos Ventos 02</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Incluído em</label>
+                              <p>30/05/2020</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Usuário</label>
+                              <p>lpsouza</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Valor</label>
+                              <p><span>R$ </span>54,90</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>C. Custo</label>
+                              <p>2.02.01</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                              <label>Fornecedor</label>
+                              <p>ANEEL</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Vencimento</label>
+                              <p>30/06/2020</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Fluxo / Status</label>
+                              <p>Requisição</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="informativos">
+                          <i class="far fa-engine-warning"></i>
+                          <i class="far fa-user-tie"></i>
+                          <i class="far fa-thumbs-up"></i>
+                          <i class="far fa-comments"></i>
+                        </div>
+                        <div class="acoes">
+                          <div class="anexos area-interativa">
+                            <span class="badge badge-pill badge-dark">4</span>
+                            <a href="#">
+                              <i class="far fa-paperclip"></i>
+                            </a>
+                          </div>
+                          <div class="acoes-menu area-interativa">
+                            <a class="" href="#" role="button" id="menuAcoesLista01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAcoesLista01">
+                              <a class="dropdown-item show-toast" href="#"><i class="far fa-thumbs-up"></i> Aprovar</a>          
+                              <a class="dropdown-item" href="#"><i class="far fa-comments"></i> Comentar</a>
+                              <hr>
+                              <a class="dropdown-item text-danger" href="#"><i class="far fa-trash-alt"></i> Reprovar</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Toast Ini -->
+                    <div class="toast toastMedidas animated" role="alert"  data-delay="93000" id="myToast">
+                        <div class="toast-header">
+                            <span class="bg-success rounded" style="width: 20px">&nbsp;</span>
+                            <strong class="mr-auto">&nbsp;Sucesso!</strong>
+                            <small>Agora</small>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            <div>Aprovação realizada com sucesso!</a></div>
+                        </div>
+                    </div>
+                    <!-- Toast Fim -->
+                    
+                        
+                    <!-- script animacao do aprovado/reprovado ini -->
+                    <script>
+                            $(document).ready(function(){
+                                $(".show-toast").click(function(){
+                                    $("#myToast").removeClass('fadeOutRight');
+                                    $("#myToast").addClass('fadeInRight');
+                                    setTimeout(function(){
+                                      $("#myToast").removeClass('fadeInRight');
+                                      $("#myToast").addClass('fadeOutRight')
+                                  }, 4000);
+                                });
+                            });
+                    </script>
+                    <!--script animacao aprovado/reporvado fim-->
+                    
+                    
+                
+                  <div id="card02" class="card card-de-lista">
+                      <div class="card-body">
+                        <div class="custom-control custom-checkbox selecao area-interativa">
+                          <input type="checkbox" class="custom-control-input" id="card02select">
+                          <label class="custom-control-label checkbox-fix" for="card02select"></label>
+                        </div>
+                        <div class="miolo">
+                          <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Nº Doc.</label>
+                              <a href="#">2897891727</a>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Tipo</label>
+                              <p>Compra</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                              <label>Coligada</label>
+                              <p>Energia dos Ventos 02</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Incluído em</label>
+                              <p>30/05/2020</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Usuário</label>
+                              <p>lpsouza</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Valor</label>
+                              <p><span>R$ </span>54,90</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>C. Custo</label>
+                              <p>2.02.01</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                              <label>Fornecedor</label>
+                              <p>ANEEL</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Vencimento</label>
+                              <p>30/06/2020</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Fluxo / Status</label>
+                              <p>Requisição</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="informativos">
+                          <i class="far fa-engine-warning"></i>
+                          <i class="far fa-user-tie"></i>
+                          <i class="far fa-thumbs-up"></i>
+                          <i class="far fa-comments"></i>
+                        </div>
+                        <div class="acoes">
+                          <div class="anexos area-interativa">
+                            <span class="badge badge-pill badge-dark">4</span>
+                            <a href="#">
+                              <i class="far fa-paperclip"></i>
+                            </a>
+                          </div>
+                          <div class="acoes-menu area-interativa">
+                            <a class="" href="#" role="button" id="menuAcoesLista01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAcoesLista01">
+                              <a class="dropdown-item show-toast" href="#"><i class="far fa-thumbs-up"></i> Aprovar</a>          
+                              <a class="dropdown-item" href="#"><i class="far fa-comments"></i> Comentar</a>
+                              <hr>
+                              <a class="dropdown-item text-danger" href="#"><i class="far fa-trash-alt"></i> Reprovar</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Toast Ini -->
+                    <div class="toast toastMedidas animated" role="alert"  data-delay="93000" id="myToast">
+                        <div class="toast-header">
+                            <span class="bg-success rounded" style="width: 20px">&nbsp;</span>
+                            <strong class="mr-auto">&nbsp;Sucesso!</strong>
+                            <small>Agora</small>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            <div>Aprovação realizada com sucesso!</a></div>
+                        </div>
+                    </div>
+                    <!-- Toast Fim -->
+                    
+                        
+                    <!-- script animacao do aprovado/reprovado ini -->
+                    <script>
+                            $(document).ready(function(){
+                                $(".show-toast").click(function(){
+                                    $("#myToast").removeClass('fadeOutRight');
+                                    $("#myToast").addClass('fadeInRight');
+                                    setTimeout(function(){
+                                      $("#myToast").removeClass('fadeInRight');
+                                      $("#myToast").addClass('fadeOutRight')
+                                  }, 4000);
+                                });
+                            });
+                    </script>
+                    <!--script animacao aprovado/reporvado fim-->
+                    
+                    
+                
+                  <div id="card03" class="card card-de-lista">
+                      <div class="card-body">
+                        <div class="custom-control custom-checkbox selecao area-interativa">
+                          <input type="checkbox" class="custom-control-input" id="card03select">
+                          <label class="custom-control-label checkbox-fix" for="card03select"></label>
+                        </div>
+                        <div class="miolo">
+                          <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Nº Doc.</label>
+                              <a href="#">2897891727</a>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Tipo</label>
+                              <p>Compra</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                              <label>Coligada</label>
+                              <p>Energia dos Ventos 02</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Incluído em</label>
+                              <p>30/05/2020</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Usuário</label>
+                              <p>lpsouza</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Valor</label>
+                              <p><span>R$ </span>54,90</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>C. Custo</label>
+                              <p>2.02.01</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                              <label>Fornecedor</label>
+                              <p>ANEEL</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Vencimento</label>
+                              <p>30/06/2020</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                              <label>Fluxo / Status</label>
+                              <p>Requisição</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="informativos">
+                          <i class="far fa-engine-warning"></i>
+                          <i class="far fa-user-tie"></i>
+                          <i class="far fa-thumbs-up"></i>
+                          <i class="far fa-comments"></i>
+                        </div>
+                        <div class="acoes">
+                          <div class="anexos area-interativa">
+                            <span class="badge badge-pill badge-dark">4</span>
+                            <a href="#">
+                              <i class="far fa-paperclip"></i>
+                            </a>
+                          </div>
+                          <div class="acoes-menu area-interativa">
+                            <a class="" href="#" role="button" id="menuAcoesLista01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAcoesLista01">
+                              <a class="dropdown-item show-toast" href="#"><i class="far fa-thumbs-up"></i> Aprovar</a>          
+                              <a class="dropdown-item" href="#"><i class="far fa-comments"></i> Comentar</a>
+                              <hr>
+                              <a class="dropdown-item text-danger" href="#"><i class="far fa-trash-alt"></i> Reprovar</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Toast Ini -->
+                    <div class="toast toastMedidas animated" role="alert"  data-delay="93000" id="myToast">
+                        <div class="toast-header">
+                            <span class="bg-success rounded" style="width: 20px">&nbsp;</span>
+                            <strong class="mr-auto">&nbsp;Sucesso!</strong>
+                            <small>Agora</small>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            <div>Aprovação realizada com sucesso!</a></div>
+                        </div>
+                    </div>
+                    <!-- Toast Fim -->
+                    
+                        
+                    <!-- script animacao do aprovado/reprovado ini -->
+                    <script>
+                            $(document).ready(function(){
+                                $(".show-toast").click(function(){
+                                    $("#myToast").removeClass('fadeOutRight');
+                                    $("#myToast").addClass('fadeInRight');
+                                    setTimeout(function(){
+                                      $("#myToast").removeClass('fadeInRight');
+                                      $("#myToast").addClass('fadeOutRight')
+                                  }, 4000);
+                                });
+                            });
+                    </script>
+                    <!--script animacao aprovado/reporvado fim-->
+                    
+                    
+                </div>
+                
+                <script type="text/javascript">
+                  $('#card01select').click(function() {
+                    if ($(this).prop('checked')) {
+                      $('#card01').addClass('selecionado');
+                    } else {
+                      $('#card01').removeClass('selecionado');
+                    }
+                  });
+                  $('#card02select').click(function() {
+                    if ($(this).prop('checked')) {
+                      $('#card02').addClass('selecionado');
+                    } else {
+                      $('#card02').removeClass('selecionado');
+                    }
+                  });
+                  $('#card03select').click(function() {
+                    if ($(this).prop('checked')) {
+                      $('#card03').addClass('selecionado');
+                    } else {
+                      $('#card03').removeClass('selecionado');
+                    }
+                  });
+                </script>
+                
+      <footer id="footer-de-acao">
+                        <div class="esquerda">
+                        </div>
+                        <div class="direita">
+                          <div class="">
+                            <a href="#" class="btn btn-light mr-3"><i class="fas fa-arrow-left"></i> Voltar</a>
+                          </div>
+                          <div class="dropdown mr-5">
+                            <a href="#" class="btn btn-primary">
+                              <!--<i class="far fa-check"></i>-->
+                              Avançar
+                              <i class="fas fa-arrow-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </footer>
+                      
+    </section>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.date').mask('00/00/0000');
+        $('.time').mask('00:00:00');
+        $('.date_time').mask('00/00/0000 00:00:00');
+        $('.cep').mask('00000-000');
+        $('.phone').mask('0000-0000');
+        $('.phone_with_ddd').mask('(00) 0000-0000');
+        $('.phone_us').mask('(000) 000-0000');
+        $('.mixed').mask('AAA 000-S0S');
+        $('.ip_address').mask('099.099.099.099');
+        $('.percent').mask('##0,00%', {reverse: true});
+        $('.clear-if-not-match').mask("00/00/0000", {clearIfNotMatch: true});
+        $('.placeholder').mask("00/00/0000", {placeholder: "__/__/____"});
+        $('.fallback').mask("00r00r0000", {
+          translation: {
+            'r': {
+              pattern: /[\/]/,
+              fallback: '/'
+            },
+            placeholder: "__/__/____"
+          }
+        });
+    
+        $('.selectonfocus').mask("00/00/0000", {selectOnFocus: true});
+    
+        $('.cep_with_callback').mask('00000-000', {onComplete: function(cep) {
+            console.log('Mask is done!:', cep);
+          },
+           onKeyPress: function(cep, event, currentField, options){
+            console.log('An key was pressed!:', cep, ' event: ', event, 'currentField: ', currentField.attr('class'), ' options: ', options);
+          },
+          onInvalid: function(val, e, field, invalid, options){
+            var error = invalid[0];
+            console.log ("Digit: ", error.v, " is invalid for the position: ", error.p, ". We expect something like: ", error.e);
+          }
+        });
+    
+        $('.crazy_cep').mask('00000-000', {onKeyPress: function(cep, e, field, options){
+          var masks = ['00000-000', '0-00-00-00'];
+            mask = (cep.length>7) ? masks[1] : masks[0];
+          $('.crazy_cep').mask(mask, options);
+        }});
+    
+        $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
+        $('.cpf').mask('000.000.000-00', {reverse: true});
+        $('.money').mask('#.##0,00', {reverse: true});
+    
+        var SPMaskBehavior = function (val) {
+          return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        spOptions = {
+          onKeyPress: function(val, e, field, options) {
+              field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+    
+        $('.sp_celphones').mask(SPMaskBehavior, spOptions);
+    
+        $(".bt-mask-it").click(function(){
+          $(".mask-on-div").mask("000.000.000-00");
+          $(".mask-on-div").fadeOut(500).fadeIn(500)
+        })
+    
+        $('pre').each(function(i, e) {hljs.highlightBlock(e)});
+      });
+    </script>
+    
+  </body>
+</html>
