@@ -8064,6 +8064,9 @@ h1, h2, h3, h4, h5, h6, .label-destacado {
 .label-destacado {
   margin-bottom: 5px; }
 
+.rateio {
+  font-size: .85em; }
+
 .conteudo-da-pagina {
   margin-left: 260px;
   padding-bottom: 4em; }
