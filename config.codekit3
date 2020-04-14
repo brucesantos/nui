@@ -7554,22 +7554,6 @@
 		"oAP": "/pedido-de-reembolso2.html",
 		"oF": 0
 		},
-	"/rateio.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/rateio.html",
-		"oF": 0
-		},
-	"/rateio.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/rateio.html",
-		"oF": 0
-		},
 	"/reembolso.html": {
 		"cB": 0,
 		"ft": 8192,
