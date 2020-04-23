@@ -103,21 +103,3 @@ h1, h2, h3, h4, h5, h6, .label-destacado {
     }
   }
 }
-
-// Loading
-    #loader{
-      height: 100%;
-      width: 100%;
-      background-color: #fff;
-      position: fixed;
-      transform: translate (-50%-50%);
-      z-index: 999;
-      //transition: all .1s;
-    }
-
-    #loader img{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
