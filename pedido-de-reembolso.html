@@ -4,7 +4,7 @@
 <script type="text/javascript">
   function myFunction() {
     window.print();
-}  
+}
 </script>
 
   <head>
@@ -45,6 +45,9 @@
   </head>
   
   <body>
+    <div id="loader">
+      <img src="img/load.svg" width="150px" alt="">
+    </div>
     <nav id="menu-lateral">
       <div class="logo">
         <img src="img/logo.svg" alt="logomarca">
@@ -110,9 +113,9 @@
       <div class="header-de-pagina">
         <h1>Reembolso</h1>
       </div>
-      
+
       <div class="container-fluid">
-    
+
         <!-- pedido de reembolso inicio -->
         <div class="card" style="margin:1em 0;">
           <div class="card-body">
@@ -127,7 +130,7 @@
               </div>
             </div>
           </div>
-        </div>   
+        </div>
 
         <div class="card" style="margin:1em 0;">
           <div class="card-body">
@@ -267,15 +270,15 @@
               </div>
             </div>
           </div>
-        </div>   
+        </div>
         <!-- pedido de reembolso fim -->
 
       </div>
-      
 
-     
 
-      
+
+
+
     </section>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -342,6 +345,14 @@
         })
     
         $('pre').each(function(i, e) {hljs.highlightBlock(e)});
+      });
+    </script>
+    
+    <!-- Loading -->
+    <script type="text/javascript">
+      var loader = document.getElementById("loader");
+      window.addEventListener("load",function(){
+        loader.style.visibility = "hidden";
       });
     </script>
     

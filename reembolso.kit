@@ -1,82 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 
-  <!-- @import="head" -->
-  
-  <body>
-    <!-- @import="menu-lateral" -->
-    <section class="conteudo-da-pagina">
-      <!-- @import="header" -->
-      <div class="header-de-pagina">
-        <h1>Reembolso</h1>
-      </div>
-      
-      <div class="container-fluid">
-        
-    <div class="toast" role="alert" aria-live="polite" aria-atomic="true" data-delay="3000" id="myToast" style="position: fixed; absolute; top: 10%; right: 0; z-index: 1">
-        <div class="toast-header">
-            <span class="bg-success rounded" style="width: 20px">&nbsp;</span>
-            <strong class="mr-auto">&nbsp;Sucesso!</strong>
-            <small>Agora</small>
-            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="toast-body">
-            <div>Aprovação realizada com sucesso!</a></div>
-        </div>
+<!-- @import="head" -->
+<body>
+  <div id="loader">
+    <img src="img/load.svg" width="150px" alt="">
+  </div>
+  <!-- @import="menu-lateral" -->
+  <section class="conteudo-da-pagina">
+    <!-- @import="header" -->
+
+    <div class="header-de-pagina">
+      <h1>Reembolso</h1>
     </div>
 
-
-
-<script>
-    $(document).ready(function(){
-        $(".show-toast").click(function(){
-            $("#myToast").toast('show');
-        });
-    });
-</script>
-
-        <!-- passo 1 reembolso inicio -->
-        <div class="card" style="margin:1em 0;">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-4">
-                <!-- @import="timeline-reembolso" -->
+    <div class="container-fluid">
+      <!-- passo 1 reembolso inicio -->
+      <div class="card" style="margin:1em 0;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <!-- @import="timeline-reembolso" -->
+            </div>
+            <div class="col-md-8">
+              <div class="mb-4">
+                <h4>Dados Principais</h4>
               </div>
-              <div class="col-md-8">
-                <div class="mb-4">
-                  <h4>Dados Principais</h4>
-                </div>
-                <div>
+              <div>
                 <!-- @import="reembolso-form-dados-principais" -->
-                </div>
+              </div>
 
-                <div class="mb-4 mt-5">
-                  <h4>Despesas Adicionais</h4>
-                </div>
-                <div>
-                    <!-- @import="lista-reembolso" -->
-                </div>
+              <div class="mb-4 mt-5">
+                <h4>Despesas Adicionais</h4>
+              </div>
+              <div>
+                <!-- @import="lista-reembolso" -->
+              </div>
 
-                <div class="mb-4 mt-5">
-                    <h4>Adicionar Despesas</h4>
-                </div>
-                <div>
-                  <!-- @import="reembolso-form-adicionar-despesa" -->
-                </div> 
-                <div>
-                  <button type="button" class="btn btn-primary show-toast">Mostrar Toast</button>
-                </div>
+              <div class="mb-4 mt-5">
+                <h4>Adicionar Despesas</h4>
+              </div>
+              <div>
+                <!-- @import="reembolso-form-adicionar-despesa" -->
               </div>
             </div>
           </div>
         </div>
-        <!-- passo 1 reembolso fim -->
-
       </div>
-     <!-- @import="footer-de-acao" -->
-    </section>
-    <!-- @import="scripts-do-footer" -->
-  </body>
+      <!-- passo 1 reembolso fim -->
+    </div>
+    <!-- @import="footer-de-acao" -->
+  </section>
+  <!-- @import="scripts-do-footer" -->
+</body>
 </html>

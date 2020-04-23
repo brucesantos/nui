@@ -20,20 +20,24 @@
       <!-- Slide Range -->
     <link href="dependencies/range/_bootstrap-slider.css" rel="stylesheet">
 
-    <!-- Bootstrap rodando o slider range perfeito 
+    <!-- Bootstrap rodando o slider range perfeito
      <link href="dependencies/range/bootstrap.min.css" rel="stylesheet">
    -->
-    
+
 
   <!-- @import="head" -->
   <body>
+    <div id="loader">
+      <img src="img/load.svg" width="150px" alt="">
+    </div>
+
     <!-- @import="menu-lateral" -->
     <section class="conteudo-da-pagina">
       <!-- @import="header" -->
       <div class="header-de-pagina">
         <h1>Requisição de Compra</h1>
       </div>
-      
+
       <div class="container-fluid">
 
         <!-- passo 1 requisicao de compra inicio -->
@@ -95,10 +99,10 @@
     <script type="text/javascript" src="dependencies/range/_jquery.min.js"></script>
     <script type="text/javascript" src="dependencies/range/_bootstrap-slider.js"></script>
 
-   
+
     <script type="text/javascript">
       $(document).ready(function() {
-        
+
 
       /* Example 12 */
       $("#ex12a").slider({
@@ -122,7 +126,7 @@
         value: [ 3, 7 ]
       });
 
-      
+
     });
     </script>
     <!-- Script do Range fim -->

@@ -4,7 +4,7 @@
 <script type="text/javascript">
   function myFunction() {
     window.print();
-}  
+}
 </script>
 
   <head>
@@ -45,6 +45,9 @@
   </head>
   
   <body>
+    <div id="loader">
+      <img src="img/load.svg" width="150px" alt="">
+    </div>
     <nav id="menu-lateral">
       <div class="logo">
         <img src="img/logo.svg" alt="logomarca">
@@ -91,7 +94,7 @@
         </div>
         <div class="direita">
           <div class="notificacoes">
-            <span class="badge badge-pill badge-danger">4</span>
+            <span class="badge badge-pill badge-danger">6</span>
             <a class="btn btn-light" href="#" role="button"><i class="far fa-bell"></i></a>
           </div>
           <div class="dropdown">
@@ -110,9 +113,9 @@
       <div class="header-de-pagina">
         <h1>Requisição de Compra</h1>
       </div>
-      
+
       <div class="container-fluid">
-    
+
         <!-- requisicao de compra inicio -->
         <div class="card" style="margin:1em 0;">
           <div class="card-body">
@@ -127,7 +130,7 @@
               </div>
             </div>
           </div>
-        </div>   
+        </div>
 
         <div class="card" style="margin:1em 0;">
           <div class="card-body">
@@ -136,9 +139,7 @@
                 <div class="mb-4 text-center">
                   <h4>Requisição de Compra #298YU208</h4>
                 </div>
-                
-                
-                <div class="row mt-5" id="print">
+                <div class="row mt-5">
                   <div class="col-lg-6 col-md-12">
                     <h5><i class="far fa-building"></i> Dados Principais</h5>
                     <div class="card card-de-lista">
@@ -308,21 +309,20 @@
                             
                       </div>
                   </div>
-                
                 </div>
                 
               </div>
             </div>
           </div>
-        </div>   
+        </div>
         <!-- requisicao de compra fim -->
 
       </div>
-      
 
-     
 
-      
+
+
+
     </section>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -389,6 +389,14 @@
         })
     
         $('pre').each(function(i, e) {hljs.highlightBlock(e)});
+      });
+    </script>
+    
+    <!-- Loading -->
+    <script type="text/javascript">
+      var loader = document.getElementById("loader");
+      window.addEventListener("load",function(){
+        loader.style.visibility = "hidden";
       });
     </script>
     
