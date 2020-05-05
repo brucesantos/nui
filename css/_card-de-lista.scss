@@ -11,7 +11,7 @@
   margin-bottom: 10px;
   &:hover {
     @include sombra-3;
-    z-index: 2;
+    //z-index: 2;
   }
   .card-body {
     display: flex;
